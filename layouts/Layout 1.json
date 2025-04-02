@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "Sprite2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,13 +15,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
-					"sid": 490364089605620,
+					"uid": 3,
+					"sid": 921383790459221,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 490364089605620,
+						"sid": 921383790459221,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -30,10 +30,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 465,
-						"y": 634,
-						"width": 141,
-						"height": 157,
+						"x": 645,
+						"y": 381,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
