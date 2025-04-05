@@ -17,7 +17,17 @@
 	"uniqueId": "ws4vzuh52gi",
 	"objectTypes": {
 		"items": [
-			"Sprite2"
+			"BotaoVerde",
+			"BotaoVermelho",
+			"BotaoAmarelo",
+			"BotaoAzul",
+			"BotaoLaranja",
+			"NotaVerde",
+			"NotaVermelha",
+			"NotaAmarela",
+			"NotaAzul",
+			"NotaLaranja",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -29,7 +39,7 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout Teste Mecanica"
 		],
 		"subfolders": []
 	},
