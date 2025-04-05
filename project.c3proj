@@ -36,6 +36,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Centrar em",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Sólido",
 			"author": "Scirra",
@@ -55,9 +62,10 @@
 			"NotaAmarela",
 			"NotaAzul",
 			"NotaLaranja",
-			"Sprite",
 			"Teclado",
-			"Teste"
+			"Teste",
+			"Sprite",
+			"Camera"
 		],
 		"subfolders": []
 	},
