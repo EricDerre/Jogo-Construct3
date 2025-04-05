@@ -1,7 +1,7 @@
 {
-	"name": "Sprite2",
+	"name": "NotaAzul",
 	"plugin-id": "Sprite",
-	"sid": 141428412264166,
+	"sid": 503866092185486,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3796342,
+						"imageSpriteId": 4236614,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 539974733939331,
+				"sid": 422155896776218,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
