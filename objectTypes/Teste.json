@@ -1,0 +1,24 @@
+{
+	"name": "Teste",
+	"plugin-id": "Audio",
+	"sid": 647910629614670,
+	"singleglobal-inst": {
+		"type": "Teste",
+		"properties": {
+			"timescale-audio": "off",
+			"save-load": "all",
+			"play-in-background": false,
+			"latency-hint": "interactive",
+			"enable-multiple-tags": true,
+			"panning-model": "hrtf",
+			"distance-model": "inverse",
+			"listener-z-height": 600,
+			"reference-distance": 600,
+			"maximum-distance": 10000,
+			"roll-off-factor": 1
+		},
+		"uid": 13,
+		"sid": 458281086368206,
+		"tags": ""
+	}
+}

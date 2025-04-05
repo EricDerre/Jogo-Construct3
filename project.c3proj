@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43202,
+	"savedWithRelease": 43203,
 	"name": "Guitar Hero",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,8 +8,36 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Física",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -27,7 +55,9 @@
 			"NotaAmarela",
 			"NotaAzul",
 			"NotaLaranja",
-			"Sprite"
+			"Sprite",
+			"Teclado",
+			"Teste"
 		],
 		"subfolders": []
 	},
