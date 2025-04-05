@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Física",
+			"sid": 706190908506090
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -21,6 +27,18 @@
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 9324174,
+						"collisionPoly": {
+							"points": [
+								0.3760000610351561,
+								0.3959998321533204,
+								0.6199999999999999,
+								0.3959998321533203,
+								0.6119998168945309,
+								0.7040000915527341,
+								0.37200012207031247,
+								0.696000061035156
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

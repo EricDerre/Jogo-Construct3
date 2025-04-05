@@ -1,5 +1,412 @@
 {
 	"name": "Folha de eventos Principal",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 997474848509468,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVerde",
+					"sid": 842747354746078,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 376646122431911
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Teclado",
+					"sid": 721980573526664,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVerde",
+					"sid": 198761806610664,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 528814252015408
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BotaoVerde",
+					"sid": 304622980399927,
+					"parameters": {
+						"object": "NotaVerde"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NotaVerde",
+					"sid": 307535713003352
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVerde",
+					"sid": 398448032056527,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 893640053762947
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 702574777657623,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVermelho",
+					"sid": 638559400897737,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 577519670839519
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Teclado",
+					"sid": 440583396429400,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVermelho",
+					"sid": 936249542823216,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 912531884179744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BotaoVermelho",
+					"sid": 559596493651015,
+					"parameters": {
+						"object": "NotaVermelha"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NotaVermelha",
+					"sid": 327186022008008
+				}
+			],
+			"sid": 320891464465864
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 975117134687463,
+					"parameters": {
+						"key": 67
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAmarelo",
+					"sid": 995063378162473,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 478603445089352
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Teclado",
+					"sid": 691891324295379,
+					"parameters": {
+						"key": 67
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAmarelo",
+					"sid": 264137232045174,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 555134089827531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BotaoAmarelo",
+					"sid": 914170423433178,
+					"parameters": {
+						"object": "NotaAmarela"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NotaAmarela",
+					"sid": 742146805973565
+				}
+			],
+			"sid": 968159886188103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 501936619822976,
+					"parameters": {
+						"key": 86
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAzul",
+					"sid": 297987333659564,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 160559056538974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Teclado",
+					"sid": 887938337692607,
+					"parameters": {
+						"key": 86
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAzul",
+					"sid": 249498149519206,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 787357200164456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BotaoAzul",
+					"sid": 638151820417935,
+					"parameters": {
+						"object": "NotaAzul"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NotaAzul",
+					"sid": 456998305213100
+				}
+			],
+			"sid": 773637332652958
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 972680917816860,
+					"parameters": {
+						"key": 66
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoLaranja",
+					"sid": 697279069340748,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 652036997264351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Teclado",
+					"sid": 513747181610113,
+					"parameters": {
+						"key": 66
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoLaranja",
+					"sid": 148713645497120,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 474481247330851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BotaoLaranja",
+					"sid": 409205560926221,
+					"parameters": {
+						"object": "NotaLaranja"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "NotaLaranja",
+					"sid": 192240683492617
+				}
+			],
+			"sid": 742222006113274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 634254321906218
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVerde",
+					"sid": 758971125458298,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoVermelho",
+					"sid": 174238391275627,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAmarelo",
+					"sid": 475893130804682,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoAzul",
+					"sid": 898397443848842,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BotaoLaranja",
+					"sid": 116114720191863,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 238477061992761
+		}
+	],
 	"sid": 804520156959390
 }

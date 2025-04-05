@@ -5,7 +5,18 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Física",
+			"sid": 354337513350486
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 658413754758672
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -21,6 +32,18 @@
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 2057521,
+						"collisionPoly": {
+							"points": [
+								0.37300018310546873,
+								0.42200016021728454,
+								0.6149999999999977,
+								0.414999866485596,
+								0.571999969482421,
+								0.6910000228881821,
+								0.4060003662109374,
+								0.6990001296997062
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
