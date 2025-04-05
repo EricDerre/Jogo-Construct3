@@ -12,39 +12,41 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 202,
+						"height": 203,
+						"originX": 0.49504950495049505,
+						"originY": 0.49261083743842365,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4376142,
-						"collisionPoly": {
-							"points": [
-								0.34299949645996,
-								0.3934999942779539,
-								0.6585002136230458,
-								0.39249942779541025,
-								0.6339999389648435,
-								0.7240000915527326,
-								0.3419999694824216,
-								0.7259999084472643
-							]
-						},
+						"imageSpriteId": 6066244,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 203,
+						"height": 203,
+						"originX": 0.49261083743842365,
+						"originY": 0.49261083743842365,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 472523,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 995143726501033,
-				"name": "Animation 1",
+				"sid": 373172149414752,
+				"name": "Animação 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []
