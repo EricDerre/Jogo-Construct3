@@ -1,0 +1,10 @@
+{
+	"name": "Texto",
+	"plugin-id": "Text",
+	"sid": 595281598795175,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

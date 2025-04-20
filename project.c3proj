@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Audio",
-			"name": "Áudio",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -28,9 +21,16 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Física",
+			"id": "Bullet",
+			"name": "Projétil",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -63,9 +63,10 @@
 			"NotaAzul",
 			"NotaLaranja",
 			"Teclado",
-			"Teste",
-			"Sprite",
-			"Camera"
+			"Ponte",
+			"Camera",
+			"Destruidor",
+			"Texto"
 		],
 		"subfolders": []
 	},
@@ -194,7 +195,7 @@
 	"properties": {
 		"description": "",
 		"version": "1.0.0.0",
-		"autoIncrementVersion": false,
+		"autoIncrementVersion": true,
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
