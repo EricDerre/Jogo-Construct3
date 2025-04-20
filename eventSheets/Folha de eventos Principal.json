@@ -52,6 +52,35 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 947943682719951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 809563465783727,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "BarraDeProgresso",
+							"sid": 910451552213672,
+							"parameters": {
+								"value": "Aceitacao"
+							}
+						}
+					],
+					"sid": 428779650120548
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
 							"sid": 219076266322767,

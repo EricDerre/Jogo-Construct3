@@ -665,9 +665,9 @@
 					}
 				},
 				{
-					"type": "Texto",
+					"type": "Pontos",
 					"properties": {
-						"text": "Texto",
+						"text": "NUMERO PONTUACAO",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 50,
@@ -704,10 +704,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 464,
-						"y": 8186,
-						"width": 1000,
-						"height": 1000,
+						"x": 1548,
+						"y": 8187,
+						"width": 430,
+						"height": 140,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -718,6 +718,101 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "Pontuação",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 17,
+					"sid": 638076817494181,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 638076817494181,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1542,
+						"y": 8087,
+						"width": 324,
+						"height": 106,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BarraDeProgresso",
+					"properties": {
+						"value": 0,
+						"maximum": 100,
+						"tooltip": "",
+						"initially-visible": true,
+						"id": "",
+						"class": ""
+					},
+					"uid": 18,
+					"sid": 728444539198410,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 728444539198410,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1552,
+						"y": 8272,
+						"width": 345,
+						"height": 76,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],
