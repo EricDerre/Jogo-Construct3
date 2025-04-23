@@ -35,9 +35,30 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "sliderbar",
+			"name": "Barra deslizante",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Projétil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Girar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Senóide",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -75,7 +96,18 @@
 			"Destruidor",
 			"Pontos",
 			"Texto",
-			"BarraDeProgresso"
+			"BarraDeProgresso",
+			"BarraDeslizante",
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"NotaVerde2",
+			"Sprite4",
+			"Sprite5",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9"
 		],
 		"subfolders": []
 	},

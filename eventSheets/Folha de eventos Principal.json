@@ -42,6 +42,16 @@
 			"sid": 764116476744327
 		},
 		{
+			"eventType": "variable",
+			"name": "ContadorNotaLongaVerde",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 527272529155701
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Sistema",
@@ -73,6 +83,22 @@
 							"parameters": {
 								"value": "Aceitacao"
 							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Sprite4",
+							"sid": 667944094024028,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Sprite4",
+							"sid": 452628375296808,
+							"parameters": {
+								"collisions": "enabled"
+							}
 						}
 					],
 					"sid": 428779650120548
@@ -87,13 +113,35 @@
 							"parameters": {
 								"interval-seconds": "1.0"
 							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVerde",
+							"sid": 414797027323514,
+							"parameters": {
+								"object": "Sprite4",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVermelho",
+							"sid": 137507926729810,
+							"parameters": {
+								"object": "Sprite5",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
 							"id": "set-collisions-enabled",
 							"objectClass": "BotaoVerde",
-							"sid": 713004236135413,
+							"sid": 270148094856944,
 							"parameters": {
 								"collisions": "disabled"
 							}
@@ -187,6 +235,24 @@
 							"parameters": {
 								"angle": "90"
 							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Sprite4",
+							"sid": 625515608836150,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Sprite5",
+							"sid": 555727288070616,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
 						}
 					],
 					"sid": 922456890508925
@@ -248,6 +314,44 @@
 						}
 					],
 					"sid": 725704280691203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "Sprite4",
+							"sid": 557465658200457,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Sprite4",
+							"sid": 535574037843420
+						}
+					],
+					"sid": 389637036356176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "Sprite2",
+							"sid": 431634141218331,
+							"parameters": {
+								"within": "1",
+								"angle": "270"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 333954811419571
 				}
 			],
 			"sid": 249002042569366
@@ -311,6 +415,46 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVerde",
+							"sid": 216159060034313,
+							"parameters": {
+								"object": "Sprite4",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 134797283383258
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 286020099694980,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "Sprite4",
+							"sid": 960470359989298,
+							"parameters": {
+								"height": "Sprite4.Height - 45"
+							}
+						}
+					],
+					"sid": 763930076252992
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoVermelho",
 							"sid": 776437300384261,
@@ -354,6 +498,38 @@
 						}
 					],
 					"sid": 200163698428385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVermelho",
+							"sid": 109043427228401,
+							"parameters": {
+								"object": "Sprite5",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 456514598907206
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 328164322678207,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						}
+					],
+					"sid": 787045652150785
 				},
 				{
 					"eventType": "block",
