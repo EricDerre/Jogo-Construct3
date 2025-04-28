@@ -42,16 +42,6 @@
 			"sid": 764116476744327
 		},
 		{
-			"eventType": "variable",
-			"name": "ContadorNotaLongaVerde",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 527272529155701
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Sistema",
@@ -77,16 +67,8 @@
 							}
 						},
 						{
-							"id": "set-progress",
-							"objectClass": "BarraDeProgresso",
-							"sid": 910451552213672,
-							"parameters": {
-								"value": "Aceitacao"
-							}
-						},
-						{
 							"id": "set-collisions-enabled",
-							"objectClass": "Sprite4",
+							"objectClass": "NotaVerdeLonga",
 							"sid": 667944094024028,
 							"parameters": {
 								"collisions": "disabled"
@@ -94,7 +76,7 @@
 						},
 						{
 							"id": "set-collisions-enabled",
-							"objectClass": "Sprite4",
+							"objectClass": "NotaVerdeLonga",
 							"sid": 452628375296808,
 							"parameters": {
 								"collisions": "enabled"
@@ -119,7 +101,7 @@
 							"objectClass": "BotaoVerde",
 							"sid": 414797027323514,
 							"parameters": {
-								"object": "Sprite4",
+								"object": "NotaVerdeLonga",
 								"offset-x": "0",
 								"offset-y": "0"
 							},
@@ -130,7 +112,40 @@
 							"objectClass": "BotaoVermelho",
 							"sid": 137507926729810,
 							"parameters": {
-								"object": "Sprite5",
+								"object": "NotaVermelhaLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAmarelo",
+							"sid": 637232178619870,
+							"parameters": {
+								"object": "NotaAmarelaLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAzul",
+							"sid": 393273179967296,
+							"parameters": {
+								"object": "NotaAzulLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoLaranja",
+							"sid": 579330779751646,
+							"parameters": {
+								"object": "NotaLaranjaLonga",
 								"offset-x": "0",
 								"offset-y": "0"
 							},
@@ -238,7 +253,7 @@
 						},
 						{
 							"id": "set-angle-of-motion",
-							"objectClass": "Sprite4",
+							"objectClass": "NotaVerdeLonga",
 							"sid": 625515608836150,
 							"behaviorType": "Projétil",
 							"parameters": {
@@ -247,8 +262,35 @@
 						},
 						{
 							"id": "set-angle-of-motion",
-							"objectClass": "Sprite5",
+							"objectClass": "NotaVermelhaLonga",
 							"sid": 555727288070616,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 450656646696030,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAzulLonga",
+							"sid": 971585665530331,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 778811905909443,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -280,6 +322,14 @@
 							"id": "restart-layout",
 							"objectClass": "System",
 							"sid": 663203039131412
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 487172159023120,
+							"parameters": {
+								"reset-static": false
+							}
 						}
 					],
 					"sid": 264516818543636
@@ -320,7 +370,7 @@
 					"conditions": [
 						{
 							"id": "compare-height",
-							"objectClass": "Sprite4",
+							"objectClass": "NotaVerdeLonga",
 							"sid": 557465658200457,
 							"parameters": {
 								"comparison": 3,
@@ -331,11 +381,99 @@
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Sprite4",
+							"objectClass": "NotaVerdeLonga",
 							"sid": 535574037843420
 						}
 					],
 					"sid": 389637036356176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 664274649744596,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 382744582507500
+						}
+					],
+					"sid": 145626727541993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 308227886820197,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 248018556872505
+						}
+					],
+					"sid": 951642016832298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaAzulLonga",
+							"sid": 532567503114186,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzulLonga",
+							"sid": 680274355028458
+						}
+					],
+					"sid": 897187822101680
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 293123765111740,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 914372662983268
+						}
+					],
+					"sid": 745776104115949
 				},
 				{
 					"eventType": "block",
@@ -419,7 +557,7 @@
 							"objectClass": "BotaoVerde",
 							"sid": 216159060034313,
 							"parameters": {
-								"object": "Sprite4",
+								"object": "NotaVerdeLonga",
 								"offset-x": "0",
 								"offset-y": "20"
 							}
@@ -442,10 +580,10 @@
 						},
 						{
 							"id": "set-height",
-							"objectClass": "Sprite4",
-							"sid": 960470359989298,
+							"objectClass": "NotaVerdeLonga",
+							"sid": 105788548584303,
 							"parameters": {
-								"height": "Sprite4.Height - 45"
+								"height": "NotaVerdeLonga.Height - 18"
 							}
 						}
 					],
@@ -507,7 +645,7 @@
 							"objectClass": "BotaoVermelho",
 							"sid": 109043427228401,
 							"parameters": {
-								"object": "Sprite5",
+								"object": "NotaVermelhaLonga",
 								"offset-x": "0",
 								"offset-y": "20"
 							}
@@ -526,6 +664,14 @@
 							"parameters": {
 								"variable": "Pontos",
 								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 486102938474372,
+							"parameters": {
+								"height": "NotaVermelhaLonga.Height - 40"
 							}
 						}
 					],
@@ -583,6 +729,46 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAmarelo",
+							"sid": 195121802211030,
+							"parameters": {
+								"object": "NotaAmarelaLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 866335102605990
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 246104845735514,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 711002151671486,
+							"parameters": {
+								"height": "NotaAmarelaLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 389695195301645
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoAzul",
 							"sid": 292131322456063,
@@ -631,6 +817,46 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAzul",
+							"sid": 974248743279123,
+							"parameters": {
+								"object": "NotaAzulLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 267464041589523
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 976984251287920,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaAzulLonga",
+							"sid": 372022314036279,
+							"parameters": {
+								"height": "NotaAzulLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 598814661857250
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoLaranja",
 							"sid": 854834672756076,
@@ -674,6 +900,46 @@
 						}
 					],
 					"sid": 477152171880257
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoLaranja",
+							"sid": 703628077397213,
+							"parameters": {
+								"object": "NotaLaranjaLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 299332423613496
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 740029069142922,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 152108820843108,
+							"parameters": {
+								"height": "NotaLaranjaLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 921320507575483
 				},
 				{
 					"eventType": "block",
@@ -822,7 +1088,7 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 560805663400883,
+							"sid": 883884985683458,
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
@@ -890,6 +1156,14 @@
 							"parameters": {
 								"key": 90
 							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 244841963448703,
+							"parameters": {
+								"key": 83
+							}
 						}
 					],
 					"actions": [
@@ -910,7 +1184,8 @@
 							}
 						}
 					],
-					"sid": 270284546952634
+					"sid": 270284546952634,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -921,6 +1196,14 @@
 							"sid": 946605549684421,
 							"parameters": {
 								"key": 90
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 704301886821164,
+							"parameters": {
+								"key": 83
 							}
 						}
 					],
@@ -942,7 +1225,8 @@
 							}
 						}
 					],
-					"sid": 698248319029992
+					"sid": 698248319029992,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -953,6 +1237,14 @@
 							"sid": 738065816827758,
 							"parameters": {
 								"key": 88
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 661690378356747,
+							"parameters": {
+								"key": 68
 							}
 						}
 					],
@@ -974,7 +1266,8 @@
 							}
 						}
 					],
-					"sid": 778006913554737
+					"sid": 778006913554737,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -985,6 +1278,14 @@
 							"sid": 548235788956840,
 							"parameters": {
 								"key": 88
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 471303371079856,
+							"parameters": {
+								"key": 68
 							}
 						}
 					],
@@ -1006,7 +1307,8 @@
 							}
 						}
 					],
-					"sid": 658037284199686
+					"sid": 658037284199686,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1017,6 +1319,14 @@
 							"sid": 115814232611201,
 							"parameters": {
 								"key": 67
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 254164539663037,
+							"parameters": {
+								"key": 70
 							}
 						}
 					],
@@ -1038,7 +1348,8 @@
 							}
 						}
 					],
-					"sid": 834363732628429
+					"sid": 834363732628429,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1049,6 +1360,14 @@
 							"sid": 202482953831016,
 							"parameters": {
 								"key": 67
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 222924977461453,
+							"parameters": {
+								"key": 70
 							}
 						}
 					],
@@ -1070,7 +1389,8 @@
 							}
 						}
 					],
-					"sid": 486197477970250
+					"sid": 486197477970250,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1081,6 +1401,14 @@
 							"sid": 816957356361025,
 							"parameters": {
 								"key": 86
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 493573352300865,
+							"parameters": {
+								"key": 74
 							}
 						}
 					],
@@ -1102,7 +1430,8 @@
 							}
 						}
 					],
-					"sid": 672070322507910
+					"sid": 672070322507910,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1113,6 +1442,14 @@
 							"sid": 463430717486501,
 							"parameters": {
 								"key": 86
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 449920341255013,
+							"parameters": {
+								"key": 74
 							}
 						}
 					],
@@ -1134,7 +1471,8 @@
 							}
 						}
 					],
-					"sid": 117204524897910
+					"sid": 117204524897910,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1145,6 +1483,14 @@
 							"sid": 201983606105543,
 							"parameters": {
 								"key": 66
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 323527163727171,
+							"parameters": {
+								"key": 75
 							}
 						}
 					],
@@ -1166,7 +1512,8 @@
 							}
 						}
 					],
-					"sid": 658031641072247
+					"sid": 658031641072247,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -1177,6 +1524,14 @@
 							"sid": 799915586052141,
 							"parameters": {
 								"key": 66
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 475704754308159,
+							"parameters": {
+								"key": 75
 							}
 						}
 					],
@@ -1198,7 +1553,8 @@
 							}
 						}
 					],
-					"sid": 832002025556603
+					"sid": 832002025556603,
+					"isOrBlock": true
 				}
 			],
 			"sid": 848117660870922

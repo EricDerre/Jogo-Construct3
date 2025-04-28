@@ -1,11 +1,22 @@
 {
-	"name": "Sprite3",
+	"name": "NotaAzulLonga",
 	"plugin-id": "Sprite",
-	"sid": 367269864886857,
+	"sid": 408329628886661,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 446908245339936
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 368710012835819
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,13 +31,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8001324,
+						"imageSpriteId": 3440612,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 209802226348523,
+				"sid": 879059452747186,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

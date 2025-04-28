@@ -1,7 +1,7 @@
 {
-	"name": "Sprite5",
+	"name": "NotaAmarelaLonga",
 	"plugin-id": "Sprite",
-	"sid": 583135715499333,
+	"sid": 555260938225292,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,12 +9,12 @@
 		{
 			"behaviorId": "solid",
 			"name": "Sólido",
-			"sid": 681449065283694
+			"sid": 829071013611168
 		},
 		{
 			"behaviorId": "Bullet",
 			"name": "Projétil",
-			"sid": 946669866743440
+			"sid": 810376315991183
 		}
 	],
 	"effectTypes": [],
@@ -31,13 +31,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3838133,
+						"imageSpriteId": 8792877,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 298684438036751,
+				"sid": 620850747345317,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

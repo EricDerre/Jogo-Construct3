@@ -28,20 +28,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Barra de progresso",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "sliderbar",
-			"name": "Barra deslizante",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Projétil",
@@ -95,18 +81,14 @@
 			"Camera",
 			"Destruidor",
 			"Pontos",
-			"Texto",
-			"BarraDeProgresso",
-			"BarraDeslizante",
+			"Label_Pontuacao",
 			"Sprite",
 			"Sprite2",
-			"Sprite3",
-			"NotaVerde2",
-			"Sprite4",
-			"Sprite5",
-			"Sprite6",
-			"Sprite7",
-			"Sprite8",
+			"NotaVerdeLonga",
+			"NotaVermelhaLonga",
+			"NotaAmarelaLonga",
+			"NotaAzulLonga",
+			"NotaLaranjaLonga",
 			"Sprite9"
 		],
 		"subfolders": []

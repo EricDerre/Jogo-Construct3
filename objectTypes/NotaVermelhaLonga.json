@@ -1,7 +1,7 @@
 {
-	"name": "Sprite8",
+	"name": "NotaVermelhaLonga",
 	"plugin-id": "Sprite",
-	"sid": 920816946565924,
+	"sid": 583135715499333,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,12 +9,12 @@
 		{
 			"behaviorId": "solid",
 			"name": "Sólido",
-			"sid": 155447900477693
+			"sid": 681449065283694
 		},
 		{
 			"behaviorId": "Bullet",
 			"name": "Projétil",
-			"sid": 710773571660861
+			"sid": 946669866743440
 		}
 	],
 	"effectTypes": [],
@@ -31,13 +31,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 644107,
+						"imageSpriteId": 3173511,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 750040673525107,
+				"sid": 298684438036751,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
