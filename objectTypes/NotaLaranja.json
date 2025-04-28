@@ -7,9 +7,14 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Physics",
-			"name": "Física",
-			"sid": 769157910759678
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 245167749576813
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 141766635731314
 		}
 	],
 	"effectTypes": [],

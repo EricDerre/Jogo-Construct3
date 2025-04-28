@@ -1,20 +1,15 @@
 {
-	"name": "NotaAmarela",
+	"name": "Sprite2",
 	"plugin-id": "Sprite",
-	"sid": 680992131638960,
+	"sid": 413383065983873,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Sólido",
-			"sid": 877372026495586
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Projétil",
-			"sid": 106243472513470
+			"behaviorId": "Rotate",
+			"name": "Girar",
+			"sid": 591666968156369
 		}
 	],
 	"effectTypes": [],
@@ -25,31 +20,19 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.484,
+						"originY": 1.004,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9324174,
-						"collisionPoly": {
-							"points": [
-								0.3760000610351561,
-								0.3959998321533204,
-								0.6199999999999999,
-								0.3959998321533203,
-								0.6119998168945309,
-								0.7040000915527341,
-								0.37200012207031247,
-								0.696000061035156
-							]
-						},
+						"imageSpriteId": 2045596,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 563244070179784,
+				"sid": 563860660456526,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

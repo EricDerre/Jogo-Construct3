@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Audio",
-			"name": "Áudio",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -28,9 +21,30 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Física",
+			"id": "Bullet",
+			"name": "Projétil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Girar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Senóide",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -63,9 +77,19 @@
 			"NotaAzul",
 			"NotaLaranja",
 			"Teclado",
-			"Teste",
+			"Ponte",
+			"Camera",
+			"Destruidor",
+			"Pontos",
+			"Label_Pontuacao",
 			"Sprite",
-			"Camera"
+			"Sprite2",
+			"NotaVerdeLonga",
+			"NotaVermelhaLonga",
+			"NotaAmarelaLonga",
+			"NotaAzulLonga",
+			"NotaLaranjaLonga",
+			"Sprite9"
 		],
 		"subfolders": []
 	},
@@ -194,7 +218,7 @@
 	"properties": {
 		"description": "",
 		"version": "1.0.0.0",
-		"autoIncrementVersion": false,
+		"autoIncrementVersion": true,
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
@@ -244,7 +268,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 1080,
+	"viewportWidth": 1920,
 	"viewportHeight": 1920,
 	"firstLayout": null
 }

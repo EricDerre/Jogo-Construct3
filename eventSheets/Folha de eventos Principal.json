@@ -2,490 +2,1562 @@
 	"name": "Folha de eventos Principal",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 997474848509468,
-					"parameters": {
-						"key": 90
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVerde",
-					"sid": 842747354746078,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoVerde",
-					"sid": 250283417216480,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 376646122431911
+			"eventType": "variable",
+			"name": "Pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 240881775145800
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Teclado",
-					"sid": 721980573526664,
-					"parameters": {
-						"key": 90
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVerde",
-					"sid": 198761806610664,
-					"parameters": {
-						"collisions": "disabled"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoVerde",
-					"sid": 200733870265244,
-					"parameters": {
-						"frame-number": "0"
-					}
-				}
-			],
-			"sid": 528814252015408
+			"eventType": "variable",
+			"name": "Aceitacao",
+			"type": "number",
+			"initialValue": "50",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 823909637612636
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "BotaoVerde",
-					"sid": 304622980399927,
-					"parameters": {
-						"object": "NotaVerde"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "NotaVerde",
-					"sid": 307535713003352
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVerde",
-					"sid": 398448032056527,
-					"parameters": {
-						"collisions": "disabled"
-					}
-				}
-			],
-			"sid": 893640053762947
+			"eventType": "variable",
+			"name": "Combo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 803914933149047
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 702574777657623,
-					"parameters": {
-						"key": 88
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVermelho",
-					"sid": 638559400897737,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoVermelho",
-					"sid": 249725661680852,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 577519670839519
+			"eventType": "variable",
+			"name": "Poder",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 764116476744327
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sistema",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-key-released",
-					"objectClass": "Teclado",
-					"sid": 440583396429400,
-					"parameters": {
-						"key": 88
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVermelho",
-					"sid": 936249542823216,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 947943682719951
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 809563465783727,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 667944094024028,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 452628375296808,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 428779650120548
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoVermelho",
-					"sid": 163646133131542,
-					"parameters": {
-						"frame-number": "0"
-					}
-				}
-			],
-			"sid": 912531884179744
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "BotaoVermelho",
-					"sid": 559596493651015,
-					"parameters": {
-						"object": "NotaVermelha"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "NotaVermelha",
-					"sid": 327186022008008
-				}
-			],
-			"sid": 320891464465864
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 975117134687463,
-					"parameters": {
-						"key": 67
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAmarelo",
-					"sid": 995063378162473,
-					"parameters": {
-						"collisions": "enabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 219076266322767,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVerde",
+							"sid": 414797027323514,
+							"parameters": {
+								"object": "NotaVerdeLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVermelho",
+							"sid": 137507926729810,
+							"parameters": {
+								"object": "NotaVermelhaLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAmarelo",
+							"sid": 637232178619870,
+							"parameters": {
+								"object": "NotaAmarelaLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAzul",
+							"sid": 393273179967296,
+							"parameters": {
+								"object": "NotaAzulLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoLaranja",
+							"sid": 579330779751646,
+							"parameters": {
+								"object": "NotaLaranjaLonga",
+								"offset-x": "0",
+								"offset-y": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVerde",
+							"sid": 270148094856944,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVermelho",
+							"sid": 112750252276169,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAmarelo",
+							"sid": 293437545550979,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAzul",
+							"sid": 369072646111712,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoLaranja",
+							"sid": 808577036005579,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 137039114755991
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoAmarelo",
-					"sid": 537839399030651,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 478603445089352
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Teclado",
-					"sid": 691891324295379,
-					"parameters": {
-						"key": 67
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAmarelo",
-					"sid": 264137232045174,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 924551431185174
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVerde",
+							"sid": 347230368321722,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVermelha",
+							"sid": 912384646201591,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAmarela",
+							"sid": 856018215017762,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAzul",
+							"sid": 310483891681409,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaLaranja",
+							"sid": 119619111362250,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 625515608836150,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 555727288070616,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 450656646696030,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAzulLonga",
+							"sid": 971585665530331,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 778811905909443,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						}
+					],
+					"sid": 922456890508925
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoAmarelo",
-					"sid": 295131073557785,
-					"parameters": {
-						"frame-number": "0"
-					}
-				}
-			],
-			"sid": 555134089827531
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "BotaoAmarelo",
-					"sid": 914170423433178,
-					"parameters": {
-						"object": "NotaAmarela"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "NotaAmarela",
-					"sid": 742146805973565
-				}
-			],
-			"sid": 968159886188103
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 501936619822976,
-					"parameters": {
-						"key": 86
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAzul",
-					"sid": 297987333659564,
-					"parameters": {
-						"collisions": "enabled"
-					}
+					"eventType": "comment",
+					"text": "Aqui irá chamar a animação de derrota"
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoAzul",
-					"sid": 234083928263037,
-					"parameters": {
-						"frame-number": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 664406947603656,
+							"parameters": {
+								"variable": "Aceitacao",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 663203039131412
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 487172159023120,
+							"parameters": {
+								"reset-static": false
+							}
+						}
+					],
+					"sid": 264516818543636
+				},
+				{
+					"eventType": "comment",
+					"text": "Trava o valor de aceitação em 100 como máximo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 881769219203635,
+							"parameters": {
+								"variable": "Aceitacao",
+								"comparison": 5,
+								"value": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 889312260699552,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 725704280691203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 557465658200457,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 535574037843420
+						}
+					],
+					"sid": 389637036356176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 664274649744596,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 382744582507500
+						}
+					],
+					"sid": 145626727541993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 308227886820197,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 248018556872505
+						}
+					],
+					"sid": 951642016832298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaAzulLonga",
+							"sid": 532567503114186,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzulLonga",
+							"sid": 680274355028458
+						}
+					],
+					"sid": 897187822101680
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-height",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 293123765111740,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 914372662983268
+						}
+					],
+					"sid": 745776104115949
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "Sprite2",
+							"sid": 431634141218331,
+							"parameters": {
+								"within": "1",
+								"angle": "270"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 333954811419571
 				}
 			],
-			"sid": 160559056538974
+			"sid": 249002042569366
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Notas",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-key-released",
-					"objectClass": "Teclado",
-					"sid": 887938337692607,
-					"parameters": {
-						"key": 86
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAzul",
-					"sid": 249498149519206,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVerde",
+							"sid": 806490709265224,
+							"parameters": {
+								"object": "NotaVerde"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVerde",
+							"sid": 986972251724991
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 805603803171572,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 470040944296910,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 157048105903830,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 278320615130069
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoAzul",
-					"sid": 806678731633356,
-					"parameters": {
-						"frame-number": "0"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVerde",
+							"sid": 216159060034313,
+							"parameters": {
+								"object": "NotaVerdeLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 134797283383258
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 286020099694980,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 105788548584303,
+							"parameters": {
+								"height": "NotaVerdeLonga.Height - 18"
+							}
+						}
+					],
+					"sid": 763930076252992
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVermelho",
+							"sid": 776437300384261,
+							"parameters": {
+								"object": "NotaVermelha"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelha",
+							"sid": 467876884901922
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 370588157925351,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 152504924423148,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 789832922659414,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 200163698428385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoVermelho",
+							"sid": 109043427228401,
+							"parameters": {
+								"object": "NotaVermelhaLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 456514598907206
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 328164322678207,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 486102938474372,
+							"parameters": {
+								"height": "NotaVermelhaLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 787045652150785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAmarelo",
+							"sid": 931243120065336,
+							"parameters": {
+								"object": "NotaAmarela"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarela",
+							"sid": 325920510124517
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 906798843674060,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 269895245680135,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 954227224004837,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 868179373797788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAmarelo",
+							"sid": 195121802211030,
+							"parameters": {
+								"object": "NotaAmarelaLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 866335102605990
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 246104845735514,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 711002151671486,
+							"parameters": {
+								"height": "NotaAmarelaLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 389695195301645
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAzul",
+							"sid": 292131322456063,
+							"parameters": {
+								"object": "NotaAzul"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzul",
+							"sid": 751671888926074
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 869419472378568,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 129390179304627,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 616217278395108,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 965182110448303
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoAzul",
+							"sid": 974248743279123,
+							"parameters": {
+								"object": "NotaAzulLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 267464041589523
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 976984251287920,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaAzulLonga",
+							"sid": 372022314036279,
+							"parameters": {
+								"height": "NotaAzulLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 598814661857250
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoLaranja",
+							"sid": 854834672756076,
+							"parameters": {
+								"object": "NotaLaranja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranja",
+							"sid": 271326945413412
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 517353363027894,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 966074825806887,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 640711569999257,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 477152171880257
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "BotaoLaranja",
+							"sid": 703628077397213,
+							"parameters": {
+								"object": "NotaLaranjaLonga",
+								"offset-x": "0",
+								"offset-y": "20"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 299332423613496
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 740029069142922,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 152108820843108,
+							"parameters": {
+								"height": "NotaLaranjaLonga.Height - 40"
+							}
+						}
+					],
+					"sid": 921320507575483
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 226511771642306,
+							"parameters": {
+								"object": "NotaVerde"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVerde",
+							"sid": 198710061157906
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 176160903210600,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 161013530885162,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 339619164750785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 943137692943271,
+							"parameters": {
+								"object": "NotaVermelha"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelha",
+							"sid": 279654902875930
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 808907821248348,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 847771275782845,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 696771681952214
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 344723100862401,
+							"parameters": {
+								"object": "NotaAmarela"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarela",
+							"sid": 379311262991916
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 620407842730864,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 135633959641588,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 974165040994438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 515602020135002,
+							"parameters": {
+								"object": "NotaAzul"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzul",
+							"sid": 650042851370078
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 754839838096978,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 883884985683458,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 265904902996094
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 691358407747319,
+							"parameters": {
+								"object": "NotaLaranja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranja",
+							"sid": 353380681028033
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 363342181431502,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 157294085496178,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 883271798959092
 				}
 			],
-			"sid": 787357200164456
+			"sid": 872145085988205
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Botoes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "BotaoAzul",
-					"sid": 638151820417935,
-					"parameters": {
-						"object": "NotaAzul"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "NotaAzul",
-					"sid": 456998305213100
-				}
-			],
-			"sid": 773637332652958
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 972680917816860,
-					"parameters": {
-						"key": 66
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoLaranja",
-					"sid": 697279069340748,
-					"parameters": {
-						"collisions": "enabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 156965245634554,
+							"parameters": {
+								"key": 90
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 244841963448703,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVerde",
+							"sid": 132735203797988,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoVerde",
+							"sid": 726526498606526,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 270284546952634,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoLaranja",
-					"sid": 410607377357887,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 652036997264351
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Teclado",
-					"sid": 513747181610113,
-					"parameters": {
-						"key": 66
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoLaranja",
-					"sid": 148713645497120,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 946605549684421,
+							"parameters": {
+								"key": 90
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 704301886821164,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVerde",
+							"sid": 496660154143146,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoVerde",
+							"sid": 745804216367815,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 698248319029992,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "BotaoLaranja",
-					"sid": 613857576209411,
-					"parameters": {
-						"frame-number": "0"
-					}
-				}
-			],
-			"sid": 474481247330851
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "BotaoLaranja",
-					"sid": 409205560926221,
-					"parameters": {
-						"object": "NotaLaranja"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "NotaLaranja",
-					"sid": 192240683492617
-				}
-			],
-			"sid": 742222006113274
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 634254321906218
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVerde",
-					"sid": 758971125458298,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 738065816827758,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 661690378356747,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVermelho",
+							"sid": 404647475214710,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoVermelho",
+							"sid": 259283800725758,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 778006913554737,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoVermelho",
-					"sid": 174238391275627,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 548235788956840,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 471303371079856,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoVermelho",
+							"sid": 388476905623657,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoVermelho",
+							"sid": 458966379977152,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 658037284199686,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAmarelo",
-					"sid": 475893130804682,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 115814232611201,
+							"parameters": {
+								"key": 67
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 254164539663037,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAmarelo",
+							"sid": 482623439291539,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoAmarelo",
+							"sid": 789669944202785,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 834363732628429,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoAzul",
-					"sid": 898397443848842,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 202482953831016,
+							"parameters": {
+								"key": 67
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 222924977461453,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAmarelo",
+							"sid": 434688059028642,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoAmarelo",
+							"sid": 120337517894770,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 486197477970250,
+					"isOrBlock": true
 				},
 				{
-					"id": "set-collisions-enabled",
-					"objectClass": "BotaoLaranja",
-					"sid": 116114720191863,
-					"parameters": {
-						"collisions": "disabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 816957356361025,
+							"parameters": {
+								"key": 86
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 493573352300865,
+							"parameters": {
+								"key": 74
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAzul",
+							"sid": 387595554607198,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoAzul",
+							"sid": 942085248372162,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 672070322507910,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 463430717486501,
+							"parameters": {
+								"key": 86
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 449920341255013,
+							"parameters": {
+								"key": 74
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoAzul",
+							"sid": 646768623870736,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoAzul",
+							"sid": 117032695400931,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 117204524897910,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 201983606105543,
+							"parameters": {
+								"key": 66
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 323527163727171,
+							"parameters": {
+								"key": 75
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoLaranja",
+							"sid": 493276139957237,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoLaranja",
+							"sid": 613046608481007,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 658031641072247,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 799915586052141,
+							"parameters": {
+								"key": 66
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 475704754308159,
+							"parameters": {
+								"key": 75
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "BotaoLaranja",
+							"sid": 319733168912874,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BotaoLaranja",
+							"sid": 251543475749661,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 832002025556603,
+					"isOrBlock": true
 				}
 			],
-			"sid": 238477061992761
+			"sid": 848117660870922
 		}
 	],
 	"sid": 804520156959390

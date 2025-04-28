@@ -1,0 +1,10 @@
+{
+	"name": "Label_Pontuacao",
+	"plugin-id": "Text",
+	"sid": 558829844839278,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
