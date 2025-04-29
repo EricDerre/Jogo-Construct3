@@ -36,20 +36,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Rotate",
-			"name": "Girar",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Senóide",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "scrollto",
 			"name": "Centrar em",
 			"author": "Scirra",
@@ -82,14 +68,14 @@
 			"Destruidor",
 			"Pontos",
 			"Label_Pontuacao",
-			"Sprite",
-			"Sprite2",
+			"Ponteiro",
 			"NotaVerdeLonga",
 			"NotaVermelhaLonga",
 			"NotaAmarelaLonga",
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
-			"Sprite9"
+			"Acertometro",
+			"Sprite"
 		],
 		"subfolders": []
 	},

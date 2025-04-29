@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Aceitacao",
 			"type": "number",
-			"initialValue": "50",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -295,6 +295,14 @@
 							"parameters": {
 								"angle": "90"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Acertometro",
+							"sid": 165470984332587,
+							"parameters": {
+								"frame-number": "1"
+							}
 						}
 					],
 					"sid": 922456890508925
@@ -309,11 +317,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 664406947603656,
+							"sid": 676206583703785,
 							"parameters": {
 								"variable": "Aceitacao",
 								"comparison": 3,
-								"value": "0"
+								"value": "-40"
 							}
 						}
 					],
@@ -344,11 +352,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 881769219203635,
+							"sid": 297361876993606,
 							"parameters": {
 								"variable": "Aceitacao",
 								"comparison": 5,
-								"value": "100"
+								"value": "40"
 							}
 						}
 					],
@@ -356,14 +364,66 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 889312260699552,
+							"sid": 788671561693876,
 							"parameters": {
 								"variable": "Aceitacao",
-								"value": "100"
+								"value": "40"
 							}
 						}
 					],
 					"sid": 725704280691203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 938306348272512,
+							"parameters": {
+								"variable": "Aceitacao",
+								"comparison": 5,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Acertometro",
+							"sid": 152782176796763,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 468223514903169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 574608757520718,
+							"parameters": {
+								"variable": "Aceitacao",
+								"comparison": 3,
+								"value": "-20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Acertometro",
+							"sid": 286783254617086,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 581447883845458
 				},
 				{
 					"eventType": "block",
@@ -479,17 +539,34 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-within-angle",
-							"objectClass": "Sprite2",
-							"sid": 431634141218331,
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 704400235919927,
 							"parameters": {
-								"within": "1",
-								"angle": "270"
+								"tag": "\"Acertou\""
+							}
+						},
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 740109425543035,
+							"parameters": {
+								"tag": "\"Errou\""
 							}
 						}
 					],
-					"actions": [],
-					"sid": 333954811419571
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Ponteiro",
+							"sid": 118437798332396,
+							"parameters": {
+								"angle": "Aceitacao"
+							}
+						}
+					],
+					"sid": 854645934173267,
+					"isOrBlock": true
 				}
 			],
 			"sid": 249002042569366
@@ -545,6 +622,14 @@
 								"variable": "Aceitacao",
 								"value": "2"
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 696187413077803,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
 						}
 					],
 					"sid": 278320615130069
@@ -594,6 +679,39 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVerde",
+							"sid": 552895084210591,
+							"parameters": {
+								"object": "NotaVerdeLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 841696628791163,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 831060402425714,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
+						}
+					],
+					"sid": 491611961347874
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoVermelho",
 							"sid": 776437300384261,
 							"parameters": {
@@ -632,6 +750,14 @@
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 552647747215690,
+							"parameters": {
+								"tag": "\"Acertou\""
 							}
 						}
 					],
@@ -682,6 +808,39 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVermelho",
+							"sid": 424402059976377,
+							"parameters": {
+								"object": "NotaVermelhaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 176329863718652,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 718329262544227,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
+						}
+					],
+					"sid": 184300462540104
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoAmarelo",
 							"sid": 931243120065336,
 							"parameters": {
@@ -720,6 +879,14 @@
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 510934145581947,
+							"parameters": {
+								"tag": "\"Acertou\""
 							}
 						}
 					],
@@ -770,6 +937,39 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAmarelo",
+							"sid": 665332608198127,
+							"parameters": {
+								"object": "NotaAmarelaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 410282948680995,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 902395810961474,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
+						}
+					],
+					"sid": 217047887003707
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoAzul",
 							"sid": 292131322456063,
 							"parameters": {
@@ -808,6 +1008,14 @@
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 212802193182842,
+							"parameters": {
+								"tag": "\"Acertou\""
 							}
 						}
 					],
@@ -858,6 +1066,39 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAzul",
+							"sid": 700122061046926,
+							"parameters": {
+								"object": "NotaAzulLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 194973412293937,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 647073171891415,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
+						}
+					],
+					"sid": 703217248285237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
 							"objectClass": "BotaoLaranja",
 							"sid": 854834672756076,
 							"parameters": {
@@ -896,6 +1137,14 @@
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 341635355907255,
+							"parameters": {
+								"tag": "\"Acertou\""
 							}
 						}
 					],
@@ -946,6 +1195,39 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoLaranja",
+							"sid": 727106169659392,
+							"parameters": {
+								"object": "NotaLaranjaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 844763806323033,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 361331929591291,
+							"parameters": {
+								"tag": "\"Acertou\""
+							}
+						}
+					],
+					"sid": 769978347191702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
 							"objectClass": "Destruidor",
 							"sid": 226511771642306,
 							"parameters": {
@@ -971,10 +1253,18 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 161013530885162,
+							"sid": 638373506468706,
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 924933615704515,
+							"parameters": {
+								"tag": "\"Errou\""
 							}
 						}
 					],
@@ -1015,6 +1305,14 @@
 								"variable": "Aceitacao",
 								"value": "2"
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 782577693817258,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
 						}
 					],
 					"sid": 696771681952214
@@ -1053,6 +1351,14 @@
 							"parameters": {
 								"variable": "Aceitacao",
 								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 447342872524135,
+							"parameters": {
+								"tag": "\"Errou\""
 							}
 						}
 					],
@@ -1093,6 +1399,14 @@
 								"variable": "Aceitacao",
 								"value": "2"
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 196562680953939,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
 						}
 					],
 					"sid": 265904902996094
@@ -1132,9 +1446,267 @@
 								"variable": "Aceitacao",
 								"value": "2"
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 115024895156159,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
 						}
 					],
 					"sid": 883271798959092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 731728790163925,
+							"parameters": {
+								"object": "NotaVerdeLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 319677934397802,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 407079068979582,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 105216496948438,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 446035501663707,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
+						}
+					],
+					"sid": 398876601575387
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 670846439741804,
+							"parameters": {
+								"object": "NotaVermelhaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 627696971637435,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 523228023748696,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 718582927198347,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 416289308448514,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
+						}
+					],
+					"sid": 357622299041692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 159944313954393,
+							"parameters": {
+								"object": "NotaAmarelaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 705538321481295,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 229817729486113,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 336219648756032,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 253256961753878,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
+						}
+					],
+					"sid": 129346608467933
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 248700512533168,
+							"parameters": {
+								"object": "NotaAzulLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "NotaAzulLonga",
+							"sid": 730059469222292,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 987745138239669,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 429065609917182,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 337404530863763,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
+						}
+					],
+					"sid": 266699079945456
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 536324706428127,
+							"parameters": {
+								"object": "NotaLaranjaLonga"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 984214297371070,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 447572423105453,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 967787162296041,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 926742113048753,
+							"parameters": {
+								"tag": "\"Errou\""
+							}
+						}
+					],
+					"sid": 236971631384341
 				}
 			],
 			"sid": 872145085988205

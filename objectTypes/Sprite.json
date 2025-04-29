@@ -1,17 +1,11 @@
 {
 	"name": "Sprite",
 	"plugin-id": "Sprite",
-	"sid": 155478379548528,
+	"sid": 528671610978265,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Senóide",
-			"sid": 773021698701046
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3118017,
+						"imageSpriteId": 2856947,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 269489956965660,
+				"sid": 451616835562852,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

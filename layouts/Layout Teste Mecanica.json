@@ -1184,21 +1184,21 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite9",
+					"type": "Acertometro",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-animation": "Animação 1",
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 37,
-					"sid": 483730817155602,
+					"uid": 18,
+					"sid": 125035750444933,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 483730817155602,
+						"sid": 125035750444933,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1207,59 +1207,19 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1721,
-						"y": 8845,
-						"width": 389,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1730,
+						"y": 8639,
+						"width": 365.2955205404607,
+						"height": 298,
+						"originX": 0.5124223602484472,
+						"originY": 0.5536912751677853,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite9",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 36,
-					"sid": 573229953650879,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 573229953650879,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1715.5,
-						"y": 8519,
-						"width": 389,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
+						"angle": 0.005620950997602403,
 						"zElevation": 0
 					}
 				},
@@ -1469,62 +1429,7 @@
 					}
 				},
 				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 19,
-					"sid": 835803758198940,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Senóide": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 180,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 835803758198940,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1699,
-						"y": 8542,
-						"width": 39,
-						"height": 76,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite2",
+					"type": "Ponteiro",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1536,16 +1441,7 @@
 					"sid": 329685890740975,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {
-						"Girar": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 329685890740975,
 						"expanded": true,
@@ -1556,11 +1452,11 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1739,
-						"y": 9071,
-						"width": 64,
-						"height": 250,
-						"originX": 0.484,
+						"x": 1728.3449114427422,
+						"y": 8754.388911442742,
+						"width": 12.745418246983036,
+						"height": 208.4130655351837,
+						"originX": 0.516,
 						"originY": 1.004,
 						"color": [
 							1,
