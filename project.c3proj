@@ -89,7 +89,12 @@
 			"NotaAmarelaLonga",
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
-			"Sprite9"
+			"Sprite9",
+			"NotaVerdeEspecial",
+			"NotaAmarelaEspecial",
+			"NotaVermelhaEspecial",
+			"NotaAzulEspecial",
+			"NotaLaranjaEspecial"
 		],
 		"subfolders": []
 	},
