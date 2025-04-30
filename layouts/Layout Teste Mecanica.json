@@ -1413,7 +1413,7 @@
 					}
 				},
 				{
-					"type": "Label_Pontuacao",
+					"type": "nomeJogo",
 					"properties": {
 						"text": "Pontuação",
 						"enable-bbcode": true,

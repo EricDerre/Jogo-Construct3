@@ -1,0 +1,88 @@
+{
+	"name": "eMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 652437812926566,
+					"parameters": {
+						"object": "start_"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 357084285454730,
+					"parameters": {
+						"layout": "Layout Teste Mecanica"
+					}
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 948904641070627,
+					"parameters": {
+						"width": "2500",
+						"height": "1980"
+					}
+				}
+			],
+			"sid": 812546215097082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 716907457123144,
+					"parameters": {
+						"object": "start_"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "start_",
+					"sid": 979221488953712,
+					"parameters": {
+						"color": "rgbEx(128,128,128)"
+					}
+				}
+			],
+			"sid": 972613367947329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 977391381817911,
+					"parameters": {
+						"object": "start_"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "start_",
+					"sid": 390757742312393,
+					"parameters": {
+						"color": "rgbEx(107,76,40)"
+					}
+				}
+			],
+			"sid": 692015389954345
+		}
+	],
+	"sid": 659801628314231
+}
