@@ -67,7 +67,6 @@
 			"Camera",
 			"Destruidor",
 			"Pontos",
-			"Label_Pontuacao",
 			"Ponteiro",
 			"NotaVerdeLonga",
 			"NotaVermelhaLonga",
@@ -75,7 +74,9 @@
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
 			"Acertometro",
-			"Sprite"
+			"Combo",
+			"LabelPontos",
+			"LabelCombo"
 		],
 		"subfolders": []
 	},
@@ -254,7 +255,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 1920,
-	"viewportHeight": 1920,
+	"viewportWidth": 2500,
+	"viewportHeight": 1980,
 	"firstLayout": null
 }

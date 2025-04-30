@@ -33,6 +33,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "ContadorPoder",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 202178304421578
+		},
+		{
+			"eventType": "variable",
 			"name": "Poder",
 			"type": "boolean",
 			"initialValue": "false",
@@ -61,9 +71,17 @@
 						{
 							"id": "set-text",
 							"objectClass": "Pontos",
-							"sid": 809563465783727,
+							"sid": 747492572132666,
 							"parameters": {
 								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Combo",
+							"sid": 117814500564651,
+							"parameters": {
+								"text": "str(Combo) & \"x\""
 							}
 						},
 						{
@@ -344,7 +362,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Trava o valor de aceitação em 100 como máximo"
+					"text": "Trava o valor de aceitação em 40 como máximo"
 				},
 				{
 					"eventType": "block",
@@ -567,6 +585,58 @@
 					],
 					"sid": 854645934173267,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 405755611583673,
+							"parameters": {
+								"variable": "Combo",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Combo",
+							"sid": 320896616976369,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 167483241306063
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 942034665414073,
+							"parameters": {
+								"variable": "Combo",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Combo",
+							"sid": 685657643171226,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 962284787729691
 				}
 			],
 			"sid": 249002042569366
@@ -599,16 +669,16 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 805603803171572,
+							"sid": 682787241169274,
 							"parameters": {
 								"variable": "Combo",
-								"value": "0.2"
+								"value": "1"
 							}
 						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 470040944296910,
+							"sid": 816295226742347,
 							"parameters": {
 								"variable": "Pontos",
 								"value": "10 * Combo"
@@ -728,10 +798,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 370588157925351,
+							"sid": 414024760418022,
 							"parameters": {
 								"variable": "Combo",
-								"value": "0.2"
+								"value": "1"
 							}
 						},
 						{
@@ -857,10 +927,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 906798843674060,
+							"sid": 416600205000042,
 							"parameters": {
 								"variable": "Combo",
-								"value": "0.2"
+								"value": "1"
 							}
 						},
 						{
@@ -986,10 +1056,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 869419472378568,
+							"sid": 863742634453319,
 							"parameters": {
 								"variable": "Combo",
-								"value": "0.2"
+								"value": "1"
 							}
 						},
 						{
@@ -1115,10 +1185,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 517353363027894,
+							"sid": 496993388637951,
 							"parameters": {
 								"variable": "Combo",
-								"value": "0.2"
+								"value": "1"
 							}
 						},
 						{
