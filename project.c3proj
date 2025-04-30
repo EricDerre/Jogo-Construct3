@@ -77,6 +77,14 @@
 			"Combo",
 			"LabelPontos",
 			"LabelCombo"
+
+			"Sprite10",
+			"NotaVerdeEspecial",
+			"NotaAmarelaEspecial",
+			"NotaVermelhaEspecial",
+			"NotaAzulEspecial",
+			"NotaLaranjaEspecial",
+			"NotaVermelhaLonga2"
 		],
 		"subfolders": []
 	},

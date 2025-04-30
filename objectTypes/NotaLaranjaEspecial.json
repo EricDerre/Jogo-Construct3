@@ -1,0 +1,79 @@
+{
+	"name": "NotaLaranjaEspecial",
+	"plugin-id": "Sprite",
+	"sid": 731619683297913,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 158058674012856
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 546440268715535
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 193,
+						"height": 194,
+						"originX": 0.5181347150259067,
+						"originY": 0.5154639175257731,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4784937,
+						"collisionPoly": {
+							"points": [
+								0.5077720207253886,
+								0.010309278350515464,
+								0.7512953367875648,
+								0.07216494845360824,
+								0.927461139896373,
+								0.25257731958762886,
+								0.9948186528497409,
+								0.5051546391752577,
+								0.927461139896373,
+								0.7474226804123711,
+								0.7512953367875648,
+								0.9278350515463918,
+								0.49222797927461137,
+								0.9896907216494846,
+								0.2538860103626944,
+								0.9278350515463918,
+								0.07253886010362709,
+								0.7474226804123711,
+								0.010362694300518135,
+								0.4948453608247423,
+								0.07253886010362709,
+								0.25257731958762886,
+								0.2538860103626944,
+								0.07731958762886598
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 866953403183946,
+				"name": "Animação 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
