@@ -1,7 +1,7 @@
 {
-	"name": "Sprite9",
+	"name": "LabelPontos",
 	"plugin-id": "Sprite",
-	"sid": 509643397885229,
+	"sid": 789578097153543,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3815402,
+						"imageSpriteId": 465787,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 890464203640717,
+				"sid": 967745885165122,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

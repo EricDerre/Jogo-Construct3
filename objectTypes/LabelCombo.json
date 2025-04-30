@@ -1,17 +1,11 @@
 {
-	"name": "Sprite2",
+	"name": "LabelCombo",
 	"plugin-id": "Sprite",
-	"sid": 413383065983873,
+	"sid": 921494271472679,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Rotate",
-			"name": "Girar",
-			"sid": 591666968156369
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,19 +14,19 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.484,
-						"originY": 1.004,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2045596,
+						"imageSpriteId": 7979776,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 563860660456526,
+				"sid": 131578637162972,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

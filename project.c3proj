@@ -36,20 +36,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Rotate",
-			"name": "Girar",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Senóide",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "scrollto",
 			"name": "Centrar em",
 			"author": "Scirra",
@@ -81,15 +67,18 @@
 			"Camera",
 			"Destruidor",
 			"Pontos",
-			"Label_Pontuacao",
-			"Sprite",
-			"Sprite2",
+			"Ponteiro",
 			"NotaVerdeLonga",
 			"NotaVermelhaLonga",
 			"NotaAmarelaLonga",
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
-			"Sprite9",
+			"Acertometro",
+			"Combo",
+			"LabelPontos",
+			"LabelCombo"
+
+			"Sprite10",
 			"NotaVerdeEspecial",
 			"NotaAmarelaEspecial",
 			"NotaVermelhaEspecial",
@@ -274,7 +263,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 1920,
-	"viewportHeight": 1920,
+	"viewportWidth": 2500,
+	"viewportHeight": 1980,
 	"firstLayout": null
 }
