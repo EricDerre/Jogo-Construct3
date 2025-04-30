@@ -1,7 +1,7 @@
 {
-	"name": "Combo",
+	"name": "Label_Pontuacao",
 	"plugin-id": "Text",
-	"sid": 832901832183548,
+	"sid": 558829844839278,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

@@ -1,11 +1,17 @@
 {
-	"name": "Ponteiro",
+	"name": "Sprite",
 	"plugin-id": "Sprite",
-	"sid": 413383065983873,
+	"sid": 155478379548528,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide",
+			"sid": 773021698701046
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -14,19 +20,19 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.516,
-						"originY": 1.004,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6264932,
+						"imageSpriteId": 3118017,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 563860660456526,
+				"sid": 269489956965660,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
