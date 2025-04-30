@@ -209,7 +209,16 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "NotaVerde",
-							"sid": 347230368321722,
+							"sid": 298719496326304,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVerdeEspecial",
+							"sid": 242144341676169,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -226,8 +235,26 @@
 						},
 						{
 							"id": "set-angle-of-motion",
+							"objectClass": "NotaVermelhaEspecial",
+							"sid": 153648339099095,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
 							"objectClass": "NotaAmarela",
 							"sid": 856018215017762,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAmarelaEspecial",
+							"sid": 793995303356135,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -244,8 +271,26 @@
 						},
 						{
 							"id": "set-angle-of-motion",
+							"objectClass": "NotaAzulEspecial",
+							"sid": 764739609231922,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
 							"objectClass": "NotaLaranja",
 							"sid": 119619111362250,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaLaranjaEspecial",
+							"sid": 261518284799240,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -517,7 +562,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaVerde",
-							"sid": 986972251724991
+							"sid": 130195795538240
 						},
 						{
 							"id": "add-to-eventvar",
@@ -548,6 +593,54 @@
 						}
 					],
 					"sid": 278320615130069
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVerde",
+							"sid": 555792575486475,
+							"parameters": {
+								"object": "NotaVerdeEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVerdeEspecial",
+							"sid": 973664986050016
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 759034651539385,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 770334690306628,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "20 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 944087272719923,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 119727488914865
 				},
 				{
 					"eventType": "block",
@@ -605,7 +698,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaVermelha",
-							"sid": 467876884901922
+							"sid": 776911557049174
 						},
 						{
 							"id": "add-to-eventvar",
@@ -636,6 +729,54 @@
 						}
 					],
 					"sid": 200163698428385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoVermelho",
+							"sid": 732002200801970,
+							"parameters": {
+								"object": "NotaVermelhaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelhaEspecial",
+							"sid": 918479281471955
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 694346443567505,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 480951195889899,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "20 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 105812722570880,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 539817581726768
 				},
 				{
 					"eventType": "block",
@@ -693,7 +834,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaAmarela",
-							"sid": 325920510124517
+							"sid": 216683055464057
 						},
 						{
 							"id": "add-to-eventvar",
@@ -724,6 +865,54 @@
 						}
 					],
 					"sid": 868179373797788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAmarelo",
+							"sid": 333090073146117,
+							"parameters": {
+								"object": "NotaAmarelaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarelaEspecial",
+							"sid": 519672799952901
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 352652840305163,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 643473058616085,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "20 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 910318722150499,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 659160510402509
 				},
 				{
 					"eventType": "block",
@@ -781,7 +970,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaAzul",
-							"sid": 751671888926074
+							"sid": 136305121929400
 						},
 						{
 							"id": "add-to-eventvar",
@@ -812,6 +1001,54 @@
 						}
 					],
 					"sid": 965182110448303
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoAzul",
+							"sid": 681037398227479,
+							"parameters": {
+								"object": "NotaAzulEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzulEspecial",
+							"sid": 378411752236891
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 555336677452562,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 329319316198780,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "20 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 198021090296004,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 792138599581047
 				},
 				{
 					"eventType": "block",
@@ -869,7 +1106,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaLaranja",
-							"sid": 271326945413412
+							"sid": 262480877536427
 						},
 						{
 							"id": "add-to-eventvar",
@@ -900,6 +1137,54 @@
 						}
 					],
 					"sid": 477152171880257
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BotaoLaranja",
+							"sid": 536425610027246,
+							"parameters": {
+								"object": "NotaLaranjaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranjaEspecial",
+							"sid": 258405061376068
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 552515111059707,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0.2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 468063632352805,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "20 * Combo"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 936127421841997,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 395542332422808
 				},
 				{
 					"eventType": "block",
@@ -957,7 +1242,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaVerde",
-							"sid": 198710061157906
+							"sid": 952300796707352
 						},
 						{
 							"id": "set-eventvar-value",
@@ -986,6 +1271,45 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Destruidor",
+							"sid": 124543806148813,
+							"parameters": {
+								"object": "NotaVerdeEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVerdeEspecial",
+							"sid": 177912218981785
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 918273891344295,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 913532060710904,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 441133266827222
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
 							"sid": 943137692943271,
 							"parameters": {
 								"object": "NotaVermelha"
@@ -996,7 +1320,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaVermelha",
-							"sid": 279654902875930
+							"sid": 702299396648561
 						},
 						{
 							"id": "set-eventvar-value",
@@ -1025,6 +1349,45 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Destruidor",
+							"sid": 928476723543720,
+							"parameters": {
+								"object": "NotaVermelhaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaVermelhaEspecial",
+							"sid": 281467202952037
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 351568375099614,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 564059731759380,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 124873671330525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
 							"sid": 344723100862401,
 							"parameters": {
 								"object": "NotaAmarela"
@@ -1035,7 +1398,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaAmarela",
-							"sid": 379311262991916
+							"sid": 659547813842172
 						},
 						{
 							"id": "set-eventvar-value",
@@ -1064,6 +1427,45 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Destruidor",
+							"sid": 976328509553096,
+							"parameters": {
+								"object": "NotaAmarelaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAmarelaEspecial",
+							"sid": 369471923785835
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 760894311641237,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 258206342851767,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 198595732104911
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
 							"sid": 515602020135002,
 							"parameters": {
 								"object": "NotaAzul"
@@ -1074,7 +1476,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaAzul",
-							"sid": 650042851370078
+							"sid": 999022100097643
 						},
 						{
 							"id": "set-eventvar-value",
@@ -1103,6 +1505,45 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Destruidor",
+							"sid": 193156816032947,
+							"parameters": {
+								"object": "NotaAzulEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaAzulEspecial",
+							"sid": 691389695582031
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 653155048373696,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 367843681133267,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 920643358857339
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
 							"sid": 691358407747319,
 							"parameters": {
 								"object": "NotaLaranja"
@@ -1113,7 +1554,7 @@
 						{
 							"id": "destroy",
 							"objectClass": "NotaLaranja",
-							"sid": 353380681028033
+							"sid": 627203565908802
 						},
 						{
 							"id": "set-eventvar-value",
@@ -1135,6 +1576,45 @@
 						}
 					],
 					"sid": 883271798959092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destruidor",
+							"sid": 290805589692276,
+							"parameters": {
+								"object": "NotaLaranjaEspecial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotaLaranjaEspecial",
+							"sid": 320149185426757
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 172600182506518,
+							"parameters": {
+								"variable": "Combo",
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 781537494305925,
+							"parameters": {
+								"variable": "Aceitacao",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 919266688049677
 				}
 			],
 			"sid": 872145085988205

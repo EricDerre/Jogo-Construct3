@@ -1,0 +1,79 @@
+{
+	"name": "NotaVermelhaEspecial",
+	"plugin-id": "Sprite",
+	"sid": 481535529212816,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 855530883998709
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 737906040716697
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 193,
+						"height": 193,
+						"originX": 0.5181347150259067,
+						"originY": 0.5181347150259067,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1466281,
+						"collisionPoly": {
+							"points": [
+								0.5025906735751295,
+								0.010362694300518135,
+								0.7512953367875648,
+								0.07253886010362694,
+								0.927461139896373,
+								0.2538860103626943,
+								0.9948186528497409,
+								0.5077720207253886,
+								0.927461139896373,
+								0.7564766839378239,
+								0.7512953367875648,
+								0.9326424870466321,
+								0.49740932642487046,
+								0.9948186528497409,
+								0.2538860103626943,
+								0.9326424870466321,
+								0.07253886010362694,
+								0.7512953367875648,
+								0.010362694300518135,
+								0.49740932642487046,
+								0.07253886010362694,
+								0.25906735751295334,
+								0.2538860103626943,
+								0.07772020725388601
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 384180659926520,
+				"name": "Animação 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
