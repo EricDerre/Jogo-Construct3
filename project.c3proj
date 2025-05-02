@@ -95,7 +95,9 @@
 			"NotaVermelhaEspecial",
 			"NotaAzulEspecial",
 			"NotaLaranjaEspecial",
-			"NotaVermelhaLonga2"
+			"NotaVermelhaLonga2",
+			"BarraTempoBranca",
+			"BarraTempoCinza"
 		],
 		"subfolders": []
 	},

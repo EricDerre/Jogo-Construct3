@@ -47,6 +47,58 @@
 					}
 				},
 				{
+					"type": "BarraTempoBranca",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 44,
+					"sid": 493488786491757,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 493488786491757,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2309,
+						"y": 9032,
+						"width": 250,
+						"height": 65,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "NotaAzul",
 					"properties": {
 						"initially-visible": true,
@@ -2060,7 +2112,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 529,
+						"x": 531,
 						"y": 9866,
 						"width": 194.85148514851485,
 						"height": 193.89162561576353,
@@ -2100,10 +2152,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 745,
-						"y": 9866,
+						"x": 746,
+						"y": 9867,
 						"width": 194.85148514851485,
-						"height": 192.94581280788177,
+						"height": 193.891626,
 						"originX": 0.4878048780487805,
 						"originY": 0.49019607843137253,
 						"color": [
@@ -2140,10 +2192,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 959,
+						"x": 963,
 						"y": 9866,
 						"width": 194.85148514851485,
-						"height": 192.94581280788177,
+						"height": 193.891626,
 						"originX": 0.4878048780487805,
 						"originY": 0.49019607843137253,
 						"color": [
@@ -2180,10 +2232,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1183,
+						"x": 1180,
 						"y": 9866,
 						"width": 194.85148514851485,
-						"height": 194.85148514851485,
+						"height": 193.891626,
 						"originX": 0.4878048780487805,
 						"originY": 0.4878048780487805,
 						"color": [
@@ -2220,12 +2272,180 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1397,
+						"x": 1399,
 						"y": 9866,
-						"width": 193.89162561576353,
-						"height": 194.85148514851485,
+						"width": 194.851485,
+						"height": 193.891626,
 						"originX": 0.4878048780487805,
 						"originY": 0.4878048780487805,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotaVerdeLonga",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 45,
+					"sid": 344305379210564,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 344305379210564,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 530,
+						"y": 6591,
+						"width": 130,
+						"height": 1250,
+						"originX": 0.48,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotaVerde",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 46,
+					"sid": 847409313298541,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 847409313298541,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 529,
+						"y": 7215,
+						"width": 157.5030107,
+						"height": 157.50301091145835,
+						"originX": 0.49261083743842365,
+						"originY": 0.49261083743842365,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BarraTempoCinza",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 57,
+					"sid": 977833588975309,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 977833588975309,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2309,
+						"y": 8900,
+						"width": 252,
+						"height": 65.52,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

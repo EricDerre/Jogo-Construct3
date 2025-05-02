@@ -33,6 +33,36 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "ControlBarraTempo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 634479612812734
+		},
+		{
+			"eventType": "variable",
+			"name": "BPM",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 127103671793613
+		},
+		{
+			"eventType": "variable",
+			"name": "SpawnaBarraBranca",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 652864388969147
+		},
+		{
+			"eventType": "variable",
 			"name": "Poder",
 			"type": "boolean",
 			"initialValue": "false",
@@ -99,11 +129,11 @@
 						{
 							"id": "is-overlapping-at-offset",
 							"objectClass": "BotaoVerde",
-							"sid": 414797027323514,
+							"sid": 147317049676056,
 							"parameters": {
 								"object": "NotaVerdeLonga",
-								"offset-x": "0",
-								"offset-y": "0"
+								"offset-x": "1",
+								"offset-y": "1"
 							},
 							"isInverted": true
 						},
@@ -226,6 +256,15 @@
 						},
 						{
 							"id": "set-angle-of-motion",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 302535239713666,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
 							"objectClass": "NotaVermelha",
 							"sid": 912384646201591,
 							"behaviorType": "Projétil",
@@ -237,6 +276,15 @@
 							"id": "set-angle-of-motion",
 							"objectClass": "NotaVermelhaEspecial",
 							"sid": 153648339099095,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 303062848851235,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -262,6 +310,15 @@
 						},
 						{
 							"id": "set-angle-of-motion",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 661763794384010,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
 							"objectClass": "NotaAzul",
 							"sid": 310483891681409,
 							"behaviorType": "Projétil",
@@ -273,6 +330,15 @@
 							"id": "set-angle-of-motion",
 							"objectClass": "NotaAzulEspecial",
 							"sid": 764739609231922,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "NotaAzulLonga",
+							"sid": 304954503170831,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -298,44 +364,152 @@
 						},
 						{
 							"id": "set-angle-of-motion",
-							"objectClass": "NotaVerdeLonga",
-							"sid": 625515608836150,
-							"behaviorType": "Projétil",
-							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "NotaVermelhaLonga",
-							"sid": 555727288070616,
-							"behaviorType": "Projétil",
-							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "NotaAmarelaLonga",
-							"sid": 450656646696030,
-							"behaviorType": "Projétil",
-							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "NotaAzulLonga",
-							"sid": 971585665530331,
-							"behaviorType": "Projétil",
-							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
 							"objectClass": "NotaLaranjaLonga",
 							"sid": 778811905909443,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVerde",
+							"sid": 744234599583267,
+							"parameters": {
+								"x": "BotaoVerde.X",
+								"y": "NotaVerde.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVerdeEspecial",
+							"sid": 882594199425395,
+							"parameters": {
+								"x": "BotaoVerde.X",
+								"y": "NotaVerdeEspecial.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVerdeLonga",
+							"sid": 901687115933934,
+							"parameters": {
+								"x": "BotaoVerde.X",
+								"y": "NotaVerdeLonga.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVermelha",
+							"sid": 123369385526894,
+							"parameters": {
+								"x": "BotaoVermelho.X",
+								"y": "NotaVermelha.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVermelhaEspecial",
+							"sid": 159731156174720,
+							"parameters": {
+								"x": "BotaoVermelho.X",
+								"y": "NotaVermelhaEspecial.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaVermelhaLonga",
+							"sid": 302536295953490,
+							"parameters": {
+								"x": "BotaoVermelho.X",
+								"y": "NotaVermelhaLonga.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAmarela",
+							"sid": 508575767448132,
+							"parameters": {
+								"x": "BotaoAmarelo.X",
+								"y": "NotaAmarela.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAmarelaEspecial",
+							"sid": 812001371926478,
+							"parameters": {
+								"x": "BotaoAmarelo.X",
+								"y": "NotaAmarelaEspecial.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAmarelaLonga",
+							"sid": 412308308106213,
+							"parameters": {
+								"x": "BotaoAmarelo.X",
+								"y": "NotaAmarelaLonga.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAzul",
+							"sid": 349078270478629,
+							"parameters": {
+								"x": "BotaoAzul.X",
+								"y": "NotaAzul.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAzulEspecial",
+							"sid": 173929166569273,
+							"parameters": {
+								"x": "BotaoAzul.X",
+								"y": "NotaAzulEspecial.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaAzulLonga",
+							"sid": 163987342704200,
+							"parameters": {
+								"x": "BotaoAzul.X",
+								"y": "NotaAzulLonga.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaLaranja",
+							"sid": 910910191870613,
+							"parameters": {
+								"x": "BotaoLaranja.X",
+								"y": "NotaLaranja.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaLaranjaEspecial",
+							"sid": 597132088791563,
+							"parameters": {
+								"x": "BotaoLaranja.X",
+								"y": "NotaLaranjaEspecial.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "NotaLaranjaLonga",
+							"sid": 781503929557238,
+							"parameters": {
+								"x": "BotaoLaranja.X",
+								"y": "NotaLaranjaLonga.Y"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "BarraTempoBranca",
+							"sid": 180768776175074,
 							"behaviorType": "Projétil",
 							"parameters": {
 								"angle": "90"
@@ -535,6 +709,202 @@
 					],
 					"actions": [],
 					"sid": 333954811419571
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 467366644646713,
+							"parameters": {
+								"interval-seconds": "(60 / BPM)"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 999767286003278,
+							"parameters": {
+								"variable": "SpawnaBarraBranca"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 663975345162421,
+							"parameters": {
+								"object-to-create": "BarraTempoBranca",
+								"layer": "0",
+								"x": "Ponte.X",
+								"y": "8100",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "BarraTempoBranca",
+							"sid": 896616872137975,
+							"parameters": {
+								"width": "1070",
+								"height": "10"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "BarraTempoBranca",
+							"sid": 118216412567420,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "BarraTempoBranca",
+							"sid": 538250878295744,
+							"parameters": {
+								"where": "in-front",
+								"object": "Ponte"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 125418748694556,
+							"parameters": {
+								"variable": "ControlBarraTempo",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 929116598301228
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 673046628923423,
+							"parameters": {
+								"interval-seconds": "(60 / BPM)"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 393602245263816,
+							"parameters": {
+								"variable": "SpawnaBarraBranca"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 276191493094806,
+							"parameters": {
+								"object-to-create": "BarraTempoCinza",
+								"layer": "0",
+								"x": "Ponte.X",
+								"y": "8100",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "BarraTempoCinza",
+							"sid": 389192566811419,
+							"parameters": {
+								"width": "1070",
+								"height": "10"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "BarraTempoCinza",
+							"sid": 564792912241134,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "BarraTempoCinza",
+							"sid": 165160874062383,
+							"parameters": {
+								"where": "in-front",
+								"object": "Ponte"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 512022799654517,
+							"parameters": {
+								"variable": "ControlBarraTempo",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 318375168378652
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 153551755003411,
+							"parameters": {
+								"variable": "ControlBarraTempo",
+								"comparison": 5,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 597038443521535,
+							"parameters": {
+								"variable": "SpawnaBarraBranca",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 273418378686548
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 495792892886985
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 297107439835463,
+							"parameters": {
+								"variable": "SpawnaBarraBranca",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 546101887396027
 				}
 			],
 			"sid": 249002042569366
@@ -674,7 +1044,7 @@
 						{
 							"id": "set-height",
 							"objectClass": "NotaVerdeLonga",
-							"sid": 105788548584303,
+							"sid": 466244748606359,
 							"parameters": {
 								"height": "NotaVerdeLonga.Height - 18"
 							}
