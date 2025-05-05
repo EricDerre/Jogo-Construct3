@@ -73,6 +73,14 @@
 			"NotaAmarelaLonga",
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
+
+			"Sprite9",
+			"NotaVerdeEspecial",
+			"NotaAmarelaEspecial",
+			"NotaVermelhaEspecial",
+			"NotaAzulEspecial",
+			"NotaLaranjaEspecial",
+			"NotaVermelhaLonga2",
 			"Acertometro",
 			"Combo",
 			"LabelPontos",
@@ -255,6 +263,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
+
 	"viewportWidth": 2500,
 	"viewportHeight": 1980,
 	"firstLayout": null
