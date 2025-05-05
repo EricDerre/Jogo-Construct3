@@ -1,7 +1,7 @@
 {
 	"name": "BarraTempoBranca",
 	"plugin-id": "Sprite",
-	"sid": 216697071862713,
+	"sid": 766524946771438,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "Bullet",
 			"name": "Projétil",
-			"sid": 663768870597365
+			"sid": 584758853368781
 		}
 	],
 	"effectTypes": [],
@@ -26,13 +26,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5474376,
+						"imageSpriteId": 3680594,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 483060801642752,
+				"sid": 135627985901432,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

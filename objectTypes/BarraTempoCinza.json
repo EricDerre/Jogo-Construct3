@@ -1,7 +1,7 @@
 {
 	"name": "BarraTempoCinza",
 	"plugin-id": "Sprite",
-	"sid": 254534697530116,
+	"sid": 868099308063106,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "Bullet",
 			"name": "Projétil",
-			"sid": 803731271991856
+			"sid": 431580993478838
 		}
 	],
 	"effectTypes": [],
@@ -26,7 +26,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8109946,
+						"imageSpriteId": 616719,
 						"collisionPoly": {
 							"points": [
 								0.003968253968253968,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 765828345113269,
+				"sid": 465507124340089,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

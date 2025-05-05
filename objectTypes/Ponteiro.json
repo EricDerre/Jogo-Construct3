@@ -1,7 +1,7 @@
 {
-	"name": "Sprite9",
+	"name": "Ponteiro",
 	"plugin-id": "Sprite",
-	"sid": 509643397885229,
+	"sid": 342872565316860,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -14,19 +14,19 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.516,
+						"originY": 1.004,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3815402,
+						"imageSpriteId": 7417812,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 890464203640717,
+				"sid": 483044200770948,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

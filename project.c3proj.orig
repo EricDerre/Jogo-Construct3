@@ -67,24 +67,26 @@
 			"Camera",
 			"Destruidor",
 			"Pontos",
-			"Label_Pontuacao",
+			"Ponteiro",
 			"NotaVerdeLonga",
 			"NotaVermelhaLonga",
 			"NotaAmarelaLonga",
 			"NotaAzulLonga",
 			"NotaLaranjaLonga",
+<<<<<<< HEAD
+			"Acertometro",
+			"Combo",
+			"LabelPontos",
+			"LabelCombo"
+=======
+			"Sprite9",
 			"NotaVerdeEspecial",
 			"NotaAmarelaEspecial",
 			"NotaVermelhaEspecial",
 			"NotaAzulEspecial",
 			"NotaLaranjaEspecial",
-			"LabelCombo",
-			"LabelPontos",
-			"Acertometro",
-			"Ponteiro",
-			"Combo",
-			"BarraTempoBranca",
-			"BarraTempoCinza"
+			"NotaVermelhaLonga2"
+>>>>>>> EricD/ResolucaoConliftos
 		],
 		"subfolders": []
 	},

@@ -1,17 +1,11 @@
 {
-	"name": "Sprite",
+	"name": "LabelPontos",
 	"plugin-id": "Sprite",
-	"sid": 155478379548528,
+	"sid": 750266089444014,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Senóide",
-			"sid": 773021698701046
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3118017,
+						"imageSpriteId": 125173,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 269489956965660,
+				"sid": 107590357213344,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
