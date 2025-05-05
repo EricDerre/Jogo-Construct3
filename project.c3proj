@@ -82,7 +82,9 @@
 			"LabelPontos",
 			"Acertometro",
 			"Ponteiro",
-			"Combo"
+			"Combo",
+			"BarraTempoBranca",
+			"BarraTempoCinza"
 		],
 		"subfolders": []
 	},
