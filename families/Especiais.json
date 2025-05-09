@@ -1,0 +1,15 @@
+{
+	"name": "Especiais",
+	"plugin-id": "Sprite",
+	"sid": 130987742042937,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"NotaVerdeEspecial",
+		"NotaVermelhaEspecial",
+		"NotaAmarelaEspecial",
+		"NotaAzulEspecial",
+		"NotaLaranjaEspecial"
+	]
+}

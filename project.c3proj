@@ -91,7 +91,10 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Especiais",
+			"Botoes"
+		],
 		"subfolders": []
 	},
 	"layouts": {
