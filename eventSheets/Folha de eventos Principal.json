@@ -456,6 +456,14 @@
 									"parameters": {
 										"collisions": "enabled"
 									}
+								},
+								{
+									"id": "set-progress",
+									"objectClass": "BarraDeProgresso",
+									"sid": 256303228153718,
+									"parameters": {
+										"value": "BarraDeProgresso.Poder"
+									}
 								}
 							],
 							"sid": 997401785882994
@@ -860,33 +868,6 @@
 								}
 							],
 							"sid": 578625394531951
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 702629193113293,
-									"parameters": {
-										"variable": "ContadorPoder",
-										"comparison": 4,
-										"value": "4"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 549670603248381,
-									"parameters": {
-										"variable": "ContadorPoder",
-										"value": "4"
-									}
-								}
-							],
-							"sid": 223274880542682
 						}
 					],
 					"sid": 948922821785601
@@ -1251,6 +1232,14 @@
 								"variable": "MultiplicadorDePoder",
 								"value": "2"
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 114629038893894,
+							"parameters": {
+								"tag": "\"PoderAtivo\""
+							}
 						}
 					],
 					"sid": 897069385102307
@@ -1292,6 +1281,15 @@
 							"sid": 631769736415529,
 							"parameters": {
 								"variable": "ContadorPoder",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "BarraDeProgresso",
+							"sid": 106313497859539,
+							"parameters": {
+								"instance-variable": "Poder",
 								"value": "1"
 							}
 						}
@@ -1531,6 +1529,15 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "BarraDeProgresso",
+											"sid": 516628313440802,
+											"parameters": {
+												"instance-variable": "Poder",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 880918095999463
@@ -1726,6 +1733,15 @@
 											"sid": 766126956989246,
 											"parameters": {
 												"tag": "\"Acertou\""
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "BarraDeProgresso",
+											"sid": 416573389619392,
+											"parameters": {
+												"instance-variable": "Poder",
+												"value": "1"
 											}
 										}
 									],
@@ -1923,6 +1939,15 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "BarraDeProgresso",
+											"sid": 419241059047199,
+											"parameters": {
+												"instance-variable": "Poder",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 718535468416982
@@ -2119,6 +2144,15 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "BarraDeProgresso",
+											"sid": 985098806262824,
+											"parameters": {
+												"instance-variable": "Poder",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 623917927629304
@@ -2314,6 +2348,15 @@
 											"sid": 901504373588214,
 											"parameters": {
 												"tag": "\"Acertou\""
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "BarraDeProgresso",
+											"sid": 886353356710154,
+											"parameters": {
+												"instance-variable": "Poder",
+												"value": "1"
 											}
 										}
 									],

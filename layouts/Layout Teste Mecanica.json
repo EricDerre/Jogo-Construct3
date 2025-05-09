@@ -2315,6 +2315,47 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BarraDeProgresso",
+					"properties": {
+						"value": 0,
+						"maximum": 50,
+						"tooltip": "",
+						"initially-visible": true,
+						"id": "",
+						"class": ""
+					},
+					"uid": 46,
+					"sid": 330361520848286,
+					"tags": "",
+					"instanceVariables": {
+						"Poder": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 330361520848286,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 488,
+						"y": 14277,
+						"width": 280,
+						"height": 67,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 991061334440331,
