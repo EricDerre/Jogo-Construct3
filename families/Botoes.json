@@ -1,0 +1,15 @@
+{
+	"name": "Botoes",
+	"plugin-id": "Sprite",
+	"sid": 185823663151314,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BotaoVerde",
+		"BotaoVermelho",
+		"BotaoAmarelo",
+		"BotaoAzul",
+		"BotaoLaranja"
+	]
+}
