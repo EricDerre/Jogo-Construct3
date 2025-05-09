@@ -693,6 +693,70 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 864606901316484,
+									"parameters": {
+										"variable": "Aceitacao",
+										"comparison": 3,
+										"value": "-25"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "shake",
+									"objectClass": "Camera",
+									"sid": 501232201011926,
+									"behaviorType": "CentrarEm",
+									"parameters": {
+										"magnitude": "10",
+										"duration": "0.4",
+										"mode": "reducing-magnitude"
+									}
+								}
+							],
+							"sid": 792036302581432
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 154580398648766,
+									"parameters": {
+										"variable": "Aceitacao",
+										"comparison": 5,
+										"value": "25"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "shake",
+									"objectClass": "Camera",
+									"sid": 872476763640121,
+									"behaviorType": "CentrarEm",
+									"parameters": {
+										"magnitude": "0",
+										"duration": "0",
+										"mode": "reducing-magnitude"
+									}
+								}
+							],
+							"sid": 259989158251250
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 964287135871582
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-height",
 									"objectClass": "NotaVerdeLonga",
 									"sid": 297618260783302,
