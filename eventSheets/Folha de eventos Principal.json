@@ -578,6 +578,131 @@
 								}
 							],
 							"sid": 159416360552382
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 635400675703174
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoVerde",
+									"sid": 266241641802498,
+									"parameters": {
+										"object": "NotaVerdeLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoVermelho",
+									"sid": 273637089003112,
+									"parameters": {
+										"object": "NotaVermelhaLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoAmarelo",
+									"sid": 874555526299236,
+									"parameters": {
+										"object": "NotaAmarelaLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoAzul",
+									"sid": 956592620108268,
+									"parameters": {
+										"object": "NotaAzulLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoLaranja",
+									"sid": 198595329774120,
+									"parameters": {
+										"object": "NotaLaranjaLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 585747706818219,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-children",
+											"objectClass": "Botoes",
+											"sid": 124676546463929,
+											"parameters": {
+												"child": "FaiscaAcerto",
+												"which": "own"
+											}
+										},
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 486017305623503
+										}
+									],
+									"actions": [
+										{
+											"id": "remove-child",
+											"objectClass": "Botoes",
+											"sid": 907639919610885,
+											"parameters": {
+												"child": "FaiscaAcerto"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "FaiscaAcerto",
+											"sid": 416560411067778
+										}
+									],
+									"sid": 134207349284023
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FogoAcerto",
+									"sid": 940774467176561,
+									"parameters": {
+										"animation": "\"AnimacaoFogo\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "FogoAcerto",
+									"sid": 269125800090061
+								}
+							],
+							"sid": 126328141630074
 						}
 					],
 					"sid": 654441230347151
@@ -680,6 +805,42 @@
 								}
 							],
 							"sid": 724094783775276
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 265764095452392,
+									"parameters": {
+										"variable": "Aceitacao",
+										"comparison": 3,
+										"value": "20"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 183941308734147,
+									"parameters": {
+										"variable": "Aceitacao",
+										"comparison": 5,
+										"value": "-20"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Acertometro",
+									"sid": 623972643147335,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 280881478248616
 						},
 						{
 							"eventType": "block",
@@ -1463,6 +1624,13 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 945265240504522,
+											"parameters": [
+												"BotaoVerde.UID"
+											]
 										}
 									],
 									"sid": 665416258195947,
@@ -1500,10 +1668,17 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaVerdeLonga",
-											"sid": 726068094092859,
+											"sid": 789480508100272,
 											"parameters": {
-												"height": "NotaVerdeLonga.Height - 18"
+												"height": "NotaVerdeLonga.Height - 70"
 											}
+										},
+										{
+											"callFunction": "SpawnaFaiscaAcerto",
+											"sid": 630842266170334,
+											"parameters": [
+												"BotaoVerde.UID"
+											]
 										}
 									],
 									"sid": 530942069211996
@@ -1602,6 +1777,13 @@
 												"instance-variable": "Poder",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 307745040158641,
+											"parameters": [
+												"BotaoVerde.UID"
+											]
 										}
 									],
 									"sid": 880918095999463
@@ -1668,6 +1850,13 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 647518439051071,
+											"parameters": [
+												"BotaoVermelho.UID"
+											]
 										}
 									],
 									"sid": 736477095986939,
@@ -1705,10 +1894,17 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaVermelhaLonga",
-											"sid": 695685146721045,
+											"sid": 922972051766623,
 											"parameters": {
-												"height": "NotaVermelhaLonga.Height - 40"
+												"height": "NotaVermelhaLonga.Height - 70"
 											}
+										},
+										{
+											"callFunction": "SpawnaFaiscaAcerto",
+											"sid": 626358350289586,
+											"parameters": [
+												"BotaoVermelho.UID"
+											]
 										}
 									],
 									"sid": 735936190877533
@@ -1807,6 +2003,13 @@
 												"instance-variable": "Poder",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 776959315783887,
+											"parameters": [
+												"BotaoVermelho.UID"
+											]
 										}
 									],
 									"sid": 854949194956037
@@ -1873,6 +2076,13 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 913576479338305,
+											"parameters": [
+												"BotaoAmarelo.UID"
+											]
 										}
 									],
 									"sid": 164140352091791,
@@ -1910,10 +2120,17 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaAmarelaLonga",
-											"sid": 503254846290630,
+											"sid": 908171729885687,
 											"parameters": {
-												"height": "NotaAmarelaLonga.Height - 40"
+												"height": "NotaAmarelaLonga.Height - 70"
 											}
+										},
+										{
+											"callFunction": "SpawnaFaiscaAcerto",
+											"sid": 197980437676204,
+											"parameters": [
+												"BotaoAmarelo.UID"
+											]
 										}
 									],
 									"sid": 125490405136962
@@ -2012,6 +2229,13 @@
 												"instance-variable": "Poder",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 855940359737788,
+											"parameters": [
+												"BotaoAmarelo.UID"
+											]
 										}
 									],
 									"sid": 718535468416982
@@ -2078,6 +2302,13 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 752529797020843,
+											"parameters": [
+												"BotaoAzul.UID"
+											]
 										}
 									],
 									"sid": 898112481266986,
@@ -2115,10 +2346,17 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaAzulLonga",
-											"sid": 189291993767184,
+											"sid": 565531803045094,
 											"parameters": {
-												"height": "NotaAzulLonga.Height - 40"
+												"height": "NotaAzulLonga.Height - 70"
 											}
+										},
+										{
+											"callFunction": "SpawnaFaiscaAcerto",
+											"sid": 406064273665202,
+											"parameters": [
+												"BotaoAzul.UID"
+											]
 										}
 									],
 									"sid": 236520251594354
@@ -2217,6 +2455,13 @@
 												"instance-variable": "Poder",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 430783950812698,
+											"parameters": [
+												"BotaoAzul.UID"
+											]
 										}
 									],
 									"sid": 623917927629304
@@ -2283,6 +2528,13 @@
 											"parameters": {
 												"tag": "\"Acertou\""
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 655908803190530,
+											"parameters": [
+												"BotaoLaranja.UID"
+											]
 										}
 									],
 									"sid": 914053703207767,
@@ -2320,10 +2572,17 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaLaranjaLonga",
-											"sid": 702098480863289,
+											"sid": 185862228413597,
 											"parameters": {
-												"height": "NotaLaranjaLonga.Height - 40"
+												"height": "NotaLaranjaLonga.Height - 70"
 											}
+										},
+										{
+											"callFunction": "SpawnaFaiscaAcerto",
+											"sid": 275699503223435,
+											"parameters": [
+												"BotaoLaranja.UID"
+											]
 										}
 									],
 									"sid": 465619234067383
@@ -2422,6 +2681,13 @@
 												"instance-variable": "Poder",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "SpawnaFogoAcerto",
+											"sid": 151398966701456,
+											"parameters": [
+												"BotaoLaranja.UID"
+											]
 										}
 									],
 									"sid": 780027807330518
@@ -3623,6 +3889,212 @@
 				}
 			],
 			"sid": 848117660870922
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Funções",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "SpawnaFogoAcerto",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "UIDBotao",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 124225294753155
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 609459536980917,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Botoes",
+									"sid": 606204448422710,
+									"parameters": {
+										"unique-id": "UIDBotao"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Botoes",
+									"sid": 426179579776962,
+									"parameters": {
+										"object": "FogoAcerto",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FogoAcerto",
+									"sid": 795740281248993,
+									"parameters": {
+										"x": "Botoes.X",
+										"y": "Botoes.Y"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "FogoAcerto",
+									"sid": 973792222321238,
+									"parameters": {
+										"width": "Botoes.Width * 0.75",
+										"height": "Botoes.Height * 0.75"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "FogoAcerto",
+									"sid": 489972216693648,
+									"behaviorType": "Projétil",
+									"parameters": {
+										"angle": "270"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "FogoAcerto",
+									"sid": 581203382756511,
+									"parameters": {
+										"layer": "\"HUD\""
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "FogoAcerto",
+									"sid": 820377536849314
+								}
+							],
+							"sid": 285196099244952
+						}
+					]
+				},
+				{
+					"functionName": "SpawnaFaiscaAcerto",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "UIDBotao",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 655467159890733
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 881870800536909,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Botoes",
+									"sid": 275636593507678,
+									"parameters": {
+										"unique-id": "UIDBotao"
+									}
+								},
+								{
+									"id": "has-children",
+									"objectClass": "Botoes",
+									"sid": 982467909925625,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Botoes",
+									"sid": 611466220805587,
+									"parameters": {
+										"object": "FaiscaAcerto",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "add-child",
+									"objectClass": "Botoes",
+									"sid": 885697046744202,
+									"parameters": {
+										"child": "FaiscaAcerto",
+										"transform-x": true,
+										"transform-y": true,
+										"transform-w": true,
+										"transform-h": true,
+										"transform-a": true,
+										"transform-o": false,
+										"transform-z-elevation": false,
+										"transform-visibility": false,
+										"destroy-with-parent": false
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FaiscaAcerto",
+									"sid": 232002836905991,
+									"parameters": {
+										"x": "Botoes.X",
+										"y": "Botoes.Y - (Botoes.Height * 0.3)"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "FaiscaAcerto",
+									"sid": 241050801238563,
+									"parameters": {
+										"width": "Botoes.Width",
+										"height": "Botoes.Height"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "FaiscaAcerto",
+									"sid": 189720790988612,
+									"parameters": {
+										"layer": "\"HUD\""
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "FaiscaAcerto",
+									"sid": 700102752717935
+								}
+							],
+							"sid": 785397865458800
+						}
+					]
+				}
+			],
+			"sid": 686844791800942
 		}
 	],
 	"sid": 804520156959390

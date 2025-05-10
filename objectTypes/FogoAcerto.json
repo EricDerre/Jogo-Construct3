@@ -1,0 +1,116 @@
+{
+	"name": "FogoAcerto",
+	"plugin-id": "Sprite",
+	"sid": 293744684471000,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 535571321328884
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1146635,
+						"useCollisionPoly": true,
+						"duration": 10,
+						"tag": ""
+					},
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3934755,
+						"useCollisionPoly": true,
+						"duration": 2,
+						"tag": ""
+					},
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2883015,
+						"useCollisionPoly": true,
+						"duration": 2,
+						"tag": ""
+					},
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8225167,
+						"useCollisionPoly": true,
+						"duration": 2,
+						"tag": ""
+					},
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9777798,
+						"useCollisionPoly": true,
+						"duration": 4,
+						"tag": ""
+					},
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.45695364238410596,
+						"originY": 0.5364583333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4616339,
+						"useCollisionPoly": true,
+						"duration": 2,
+						"tag": ""
+					}
+				],
+				"sid": 469453606278072,
+				"name": "AnimacaoFogo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 60
+			}
+		],
+		"subfolders": []
+	}
+}
