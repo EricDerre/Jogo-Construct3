@@ -93,7 +93,9 @@
 			"BarraTempoBranca",
 			"BarraTempoCinza",
 			"Sprite",
-			"BarraDeProgresso"
+			"BarraDeProgresso",
+			"FogoAcerto",
+			"FaiscaAcerto"
 		],
 		"subfolders": []
 	},
