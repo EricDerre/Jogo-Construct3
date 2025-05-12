@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -95,7 +102,8 @@
 			"Sprite",
 			"BarraDeProgresso",
 			"FogoAcerto",
-			"FaiscaAcerto"
+			"FaiscaAcerto",
+			"Áudio"
 		],
 		"subfolders": []
 	},
@@ -110,13 +118,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout Teste Mecanica"
+			"Layout Teste Mecanica",
+			"Sweet Child O' Mine"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Folha de eventos Principal"
+			"Folha de eventos Principal",
+			"Sweet Child O' Mine"
 		],
 		"subfolders": []
 	},
@@ -130,7 +140,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Guns N' Roses - Sweet Child O' Mine.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 759005902435149,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
