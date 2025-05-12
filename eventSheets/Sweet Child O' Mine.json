@@ -1,0 +1,97 @@
+{
+	"name": "Sweet Child O' Mine",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "TocouMusica",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 815222971178885
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Folha de eventos Principal"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 167695725684138
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 305015234426660,
+					"parameters": {
+						"variable": "BPM",
+						"value": "158"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Áudio",
+					"sid": 430863738987202
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 404172284214818,
+					"parameters": {
+						"variable": "PoderAtivo",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 558937403533982
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 782194707943740,
+					"parameters": {
+						"interval-seconds": "6.3"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Áudio",
+					"sid": 931577388818096,
+					"parameters": {
+						"tag": "\"SweetChildOMine\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 579888528958413,
+					"parameters": {
+						"audio-file": "Guns N' Roses - Sweet Child O' Mine",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"SweetChildOMine\""
+					}
+				}
+			],
+			"sid": 143833503941412
+		},
+		{
+			"eventType": "script",
+			"script": []
+		}
+	],
+	"sid": 526810501575042
+}
