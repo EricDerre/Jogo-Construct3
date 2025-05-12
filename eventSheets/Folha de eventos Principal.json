@@ -1544,6 +1544,15 @@
 								"variable": "MultiplicadorDePoder",
 								"value": "1"
 							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 275473407432499,
+							"parameters": {
+								"variable": "PoderAtivo",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 741061024054323
