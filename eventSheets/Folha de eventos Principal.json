@@ -1751,9 +1751,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaVerdeLonga",
-											"sid": 789480508100272,
+											"sid": 324855952042168,
 											"parameters": {
-												"height": "NotaVerdeLonga.Height - 70"
+												"height": "NotaVerdeLonga.Height - 25"
 											}
 										},
 										{
@@ -1977,9 +1977,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaVermelhaLonga",
-											"sid": 922972051766623,
+											"sid": 524015083482682,
 											"parameters": {
-												"height": "NotaVermelhaLonga.Height - 70"
+												"height": "NotaVermelhaLonga.Height - 25"
 											}
 										},
 										{
@@ -2203,9 +2203,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaAmarelaLonga",
-											"sid": 567602611361143,
+											"sid": 215435670212852,
 											"parameters": {
-												"height": "NotaAmarelaLonga.Height - 50"
+												"height": "NotaAmarelaLonga.Height - 25"
 											}
 										},
 										{
@@ -2429,9 +2429,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaAzulLonga",
-											"sid": 565531803045094,
+											"sid": 832421914130450,
 											"parameters": {
-												"height": "NotaAzulLonga.Height - 70"
+												"height": "NotaAzulLonga.Height - 25"
 											}
 										},
 										{
@@ -2655,9 +2655,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaLaranjaLonga",
-											"sid": 185862228413597,
+											"sid": 920858422207121,
 											"parameters": {
-												"height": "NotaLaranjaLonga.Height - 70"
+												"height": "NotaLaranjaLonga.Height - 25"
 											}
 										},
 										{
