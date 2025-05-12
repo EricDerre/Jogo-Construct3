@@ -464,15 +464,6 @@
 									"parameters": {
 										"value": "BarraDeProgresso.Poder"
 									}
-								},
-								{
-									"id": "subtract-from-instvar",
-									"objectClass": "Botoes",
-									"sid": 174736200085621,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0.0166666666666667"
-									}
 								}
 							],
 							"sid": 997401785882994
@@ -481,13 +472,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "BotaoVerde",
-									"sid": 907868705121902,
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 643241992896408,
 									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"comparison": 3,
-										"value": "0"
+										"interval-seconds": "1.0"
 									}
 								},
 								{
@@ -496,6 +485,50 @@
 									"sid": 312342788295271,
 									"parameters": {
 										"object": "NotaVerdeLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoVermelho",
+									"sid": 469868900357285,
+									"parameters": {
+										"object": "NotaVermelhaLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoAmarelo",
+									"sid": 557912290303084,
+									"parameters": {
+										"object": "NotaAmarelaLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoAzul",
+									"sid": 779490391187982,
+									"parameters": {
+										"object": "NotaAzulLonga",
+										"offset-x": "0",
+										"offset-y": "0"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "BotaoLaranja",
+									"sid": 232787469121699,
+									"parameters": {
+										"object": "NotaLaranjaLonga",
 										"offset-x": "0",
 										"offset-y": "0"
 									},
@@ -510,157 +543,41 @@
 									"parameters": {
 										"collisions": "disabled"
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "BotaoVermelho",
+									"sid": 440278368673725,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "BotaoAmarelo",
+									"sid": 565043117700213,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "BotaoAzul",
+									"sid": 444335743699412,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "BotaoLaranja",
+									"sid": 547720839426093,
+									"parameters": {
+										"collisions": "disabled"
+									}
 								}
 							],
 							"sid": 159416360552382
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "BotaoVermelho",
-									"sid": 959138275857583,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"comparison": 3,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-at-offset",
-									"objectClass": "BotaoVermelho",
-									"sid": 300956078254132,
-									"parameters": {
-										"object": "NotaVermelhaLonga",
-										"offset-x": "0",
-										"offset-y": "0"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "BotaoVermelho",
-									"sid": 838683071807680,
-									"parameters": {
-										"collisions": "disabled"
-									}
-								}
-							],
-							"sid": 571355185582887
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "BotaoAmarelo",
-									"sid": 809567574500811,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"comparison": 3,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-at-offset",
-									"objectClass": "BotaoAmarelo",
-									"sid": 364544978603002,
-									"parameters": {
-										"object": "NotaAmarelaLonga",
-										"offset-x": "0",
-										"offset-y": "0"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "BotaoAmarelo",
-									"sid": 986781314780834,
-									"parameters": {
-										"collisions": "disabled"
-									}
-								}
-							],
-							"sid": 117899246087483
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "BotaoAzul",
-									"sid": 939256210511264,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"comparison": 3,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-at-offset",
-									"objectClass": "BotaoAzul",
-									"sid": 276583310798209,
-									"parameters": {
-										"object": "NotaAzulLonga",
-										"offset-x": "0",
-										"offset-y": "0"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "BotaoAzul",
-									"sid": 528189141108137,
-									"parameters": {
-										"collisions": "disabled"
-									}
-								}
-							],
-							"sid": 196025322962939
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "BotaoLaranja",
-									"sid": 264424454945900,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"comparison": 3,
-										"value": "0"
-									}
-								},
-								{
-									"id": "is-overlapping-at-offset",
-									"objectClass": "BotaoLaranja",
-									"sid": 586446604942420,
-									"parameters": {
-										"object": "NotaLaranjaLonga",
-										"offset-x": "0",
-										"offset-y": "0"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "BotaoLaranja",
-									"sid": 237769918899980,
-									"parameters": {
-										"collisions": "disabled"
-									}
-								}
-							],
-							"sid": 268609258460420
 						},
 						{
 							"eventType": "block",
@@ -1264,12 +1181,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 800760806290360,
+									"sid": 698188689657496,
 									"parameters": {
 										"object-to-create": "BarraTempoBranca",
 										"layer": "0",
 										"x": "Ponte.X",
-										"y": "Camera.Y - 8100",
+										"y": "8100",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -1338,12 +1255,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 391157778073892,
+									"sid": 859171904623269,
 									"parameters": {
 										"object-to-create": "BarraTempoCinza",
 										"layer": "0",
 										"x": "Ponte.X",
-										"y": "Camera.Y - 8100",
+										"y": "8100",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -2203,9 +2120,9 @@
 										{
 											"id": "set-height",
 											"objectClass": "NotaAmarelaLonga",
-											"sid": 567602611361143,
+											"sid": 908171729885687,
 											"parameters": {
-												"height": "NotaAmarelaLonga.Height - 50"
+												"height": "NotaAmarelaLonga.Height - 70"
 											}
 										},
 										{
@@ -3569,15 +3486,6 @@
 									"parameters": {
 										"frame-number": "1"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoVerde",
-									"sid": 744446163221536,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "1"
-									}
 								}
 							],
 							"sid": 608870566495489,
@@ -3618,15 +3526,6 @@
 									"sid": 343643347779648,
 									"parameters": {
 										"frame-number": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoVerde",
-									"sid": 151921682892410,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0"
 									}
 								}
 							],
@@ -3669,15 +3568,6 @@
 									"parameters": {
 										"frame-number": "1"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoVermelho",
-									"sid": 124767030507787,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "1"
-									}
 								}
 							],
 							"sid": 583523481208526,
@@ -3718,15 +3608,6 @@
 									"sid": 335513968761457,
 									"parameters": {
 										"frame-number": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoVermelho",
-									"sid": 263190242921002,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0"
 									}
 								}
 							],
@@ -3769,15 +3650,6 @@
 									"parameters": {
 										"frame-number": "1"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoAmarelo",
-									"sid": 481728753165259,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "1"
-									}
 								}
 							],
 							"sid": 482252577815559,
@@ -3818,15 +3690,6 @@
 									"sid": 843279350256618,
 									"parameters": {
 										"frame-number": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoAmarelo",
-									"sid": 794814774686137,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0"
 									}
 								}
 							],
@@ -3869,15 +3732,6 @@
 									"parameters": {
 										"frame-number": "1"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoAzul",
-									"sid": 621838886182763,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "1"
-									}
 								}
 							],
 							"sid": 819676554562133,
@@ -3918,15 +3772,6 @@
 									"sid": 612908112720472,
 									"parameters": {
 										"frame-number": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoAzul",
-									"sid": 314691190617856,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0"
 									}
 								}
 							],
@@ -3969,15 +3814,6 @@
 									"parameters": {
 										"frame-number": "1"
 									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoLaranja",
-									"sid": 786746037742533,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "1"
-									}
 								}
 							],
 							"sid": 301476353894756,
@@ -4018,15 +3854,6 @@
 									"sid": 740263366406361,
 									"parameters": {
 										"frame-number": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "BotaoLaranja",
-									"sid": 192862197821860,
-									"parameters": {
-										"instance-variable": "TempoAtivo",
-										"value": "0"
 									}
 								}
 							],
