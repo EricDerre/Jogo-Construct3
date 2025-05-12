@@ -2,15 +2,7 @@
 	"name": "Botoes",
 	"plugin-id": "Sprite",
 	"sid": 185823663151314,
-	"instanceVariables": [
-		{
-			"name": "TempoAtivo",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 332843170795212
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
