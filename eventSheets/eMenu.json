@@ -1,0 +1,420 @@
+{
+	"name": "eMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 312190376167153
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 836298346073779,
+					"parameters": {
+						"width": "1927",
+						"height": "1121"
+					}
+				}
+			],
+			"sid": 307221930883356
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 357263349251677,
+					"parameters": {
+						"object": "start_"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 275234685221363,
+					"parameters": {
+						"layout": "TelaMusicas"
+					}
+				}
+			],
+			"sid": 409042182588489
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 972353301232627,
+					"parameters": {
+						"object": "start_"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "start_",
+					"sid": 437669408692858,
+					"parameters": {
+						"color": "rgbEx(128,128,128)"
+					}
+				}
+			],
+			"sid": 901568133618328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 477637037809934,
+					"parameters": {
+						"object": "start_"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "start_",
+					"sid": 768637251279811,
+					"parameters": {
+						"color": "rgbEx(107,76,40)"
+					}
+				}
+			],
+			"sid": 698419537555309
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 781760936166436,
+					"parameters": {
+						"object": "Creditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Creditos",
+					"sid": 154654590676689,
+					"parameters": {
+						"color": "rgbEx(128,128,128)"
+					}
+				}
+			],
+			"sid": 978105005471209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 246348062809068,
+					"parameters": {
+						"object": "Creditos"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Creditos",
+					"sid": 893010017117769,
+					"parameters": {
+						"color": "rgbEx(107,76,40)"
+					}
+				}
+			],
+			"sid": 698641984601983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 423867772187030,
+					"parameters": {
+						"object": "Creditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 664967910297669,
+					"parameters": {
+						"layout": "TelaDeCreditos"
+					}
+				}
+			],
+			"sid": 299851600025743
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 878593070699320,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 113204670343400,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 965699984915470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 268328171365168,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Back",
+					"sid": 356586230847724,
+					"parameters": {
+						"color": "rgbEx(128,128,128)"
+					}
+				}
+			],
+			"sid": 514607482969416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 800850917041104,
+					"parameters": {
+						"object": "Back"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Back",
+					"sid": 340337777342714,
+					"parameters": {
+						"color": "rgbEx(107,76,40)"
+					}
+				}
+			],
+			"sid": 281462631215770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 861296223642068,
+					"parameters": {
+						"object": "Allnite_musica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 987272779230539,
+					"parameters": {
+						"layout": "Rock And Roll All Nite"
+					}
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 641973871134385,
+					"parameters": {
+						"width": "2500",
+						"height": "1980"
+					}
+				}
+			],
+			"sid": 196716701037979
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 958802232470646,
+					"parameters": {
+						"object": "OMine_musica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 839603860033412,
+					"parameters": {
+						"layout": "Sweet Child O' Mine"
+					}
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 587884072560227,
+					"parameters": {
+						"width": "2500",
+						"height": "1980"
+					}
+				}
+			],
+			"sid": 776644689398180
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 504120182375441,
+					"parameters": {
+						"object": "VoltarInicio"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 966029672856329,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 398795070706938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 707165740369466,
+					"parameters": {
+						"object": "VoltarInicio"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "VoltarInicio",
+					"sid": 609713587761951,
+					"parameters": {
+						"color": "rgbEx(128,128,128)"
+					}
+				}
+			],
+			"sid": 568795754677811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 491124541544674,
+					"parameters": {
+						"object": "VoltarInicio"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "VoltarInicio",
+					"sid": 989263135444675,
+					"parameters": {
+						"color": "rgbEx(107,76,40)"
+					}
+				}
+			],
+			"sid": 709282947036779
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 462988874996373
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Áudio",
+					"sid": 316250602679351,
+					"parameters": {
+						"tag": "\"musicafundo\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 170868497310958,
+					"parameters": {
+						"audio-file": "Ac dc - Back in black  (instrumental)",
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"musicafundo\""
+					}
+				}
+			],
+			"sid": 281388980823208
+		}
+	],
+	"sid": 775359511432419
+}

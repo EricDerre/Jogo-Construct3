@@ -410,6 +410,15 @@
 										"instance-variable": "Poder",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Finalizador",
+									"sid": 236041770333485,
+									"behaviorType": "Projétil",
+									"parameters": {
+										"angle": "90"
+									}
 								}
 							],
 							"sid": 502448242931139
@@ -826,16 +835,44 @@
 							],
 							"actions": [
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 307980005218398
-								},
-								{
 									"id": "reset-global-variables",
 									"objectClass": "System",
-									"sid": 999837962888169,
+									"sid": 680878082279449,
 									"parameters": {
-										"reset-static": false
+										"reset-static": true
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 241111979666866,
+									"parameters": {
+										"layout": "VocêPerdeu!"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 983090133524117,
+									"parameters": {
+										"tag": "\"SweetChildOMine\""
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 966992587096421,
+									"parameters": {
+										"tag": "\"KISS\""
+									}
+								},
+								{
+									"id": "set-canvas-size",
+									"objectClass": "System",
+									"sid": 306333636677626,
+									"parameters": {
+										"width": "1927",
+										"height": "1121"
 									}
 								}
 							],
@@ -3596,6 +3633,63 @@
 								}
 							],
 							"sid": 738064940449134
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Destruidor",
+									"sid": 512098588631476,
+									"parameters": {
+										"object": "Finalizador"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 609330894644355,
+									"parameters": {
+										"layout": "YouRock!"
+									}
+								},
+								{
+									"id": "reset-global-variables",
+									"objectClass": "System",
+									"sid": 164475520644552,
+									"parameters": {
+										"reset-static": true
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 589245381183737,
+									"parameters": {
+										"tag": "\"SweetChildOMine\""
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 467590893501460,
+									"parameters": {
+										"tag": "\"KISS\""
+									}
+								},
+								{
+									"id": "set-canvas-size",
+									"objectClass": "System",
+									"sid": 593791783249164,
+									"parameters": {
+										"width": "1927",
+										"height": "1121"
+									}
+								}
+							],
+							"sid": 489028881819854
 						}
 					],
 					"sid": 545378400499122

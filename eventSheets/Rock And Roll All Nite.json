@@ -46,11 +46,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 703525367600351
+				}
+			],
+			"actions": [],
+			"sid": 768601027989181
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 175027696665861,
+					"sid": 518325855010913,
 					"parameters": {
-						"interval-seconds": "6.5"
+						"interval-seconds": "6.5+time"
 					}
 				},
 				{

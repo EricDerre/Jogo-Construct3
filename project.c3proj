@@ -15,8 +15,22 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Botão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -31,6 +45,13 @@
 			"type": "plugin",
 			"id": "Text",
 			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Toque",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -103,8 +124,25 @@
 			"FogoAcerto",
 			"FaiscaAcerto",
 			"Áudio",
-			"Sprite",
-			"Sprite2"
+			"TeladeFundo2",
+			"TeladeFundo",
+			"VoltarInicio",
+			"start_",
+			"Creditos",
+			"Allnite_musica",
+			"OMine_musica",
+			"CreditoFundo",
+			"Derrota",
+			"YouRock",
+			"TelaMusicas",
+			"telaInicio",
+			"Integrantes",
+			"Back",
+			"nomeJogo",
+			"START",
+			"Toque",
+			"Mouse",
+			"Finalizador"
 		],
 		"subfolders": []
 	},
@@ -121,9 +159,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout Teste Mecanica",
 			"Sweet Child O' Mine",
-			"Rock And Roll All Nite"
+			"Rock And Roll All Nite",
+			"VocêPerdeu!",
+			"YouRock!",
+			"TelaMusicas",
+			"TelaDeCreditos",
+			"Menu"
 		],
 		"subfolders": []
 	},
@@ -131,7 +173,8 @@
 		"items": [
 			"Folha de eventos Principal",
 			"Sweet Child O' Mine",
-			"Rock And Roll All Nite"
+			"Rock And Roll All Nite",
+			"eMenu"
 		],
 		"subfolders": []
 	},
@@ -158,6 +201,14 @@
 					"name": "Rock And Roll All Nite.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 988585331582186,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Ac dc - Back in black  (instrumental).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 989866358655490,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -309,7 +360,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 2500,
-	"viewportHeight": 1980,
+	"viewportWidth": 1927,
+	"viewportHeight": 1121,
 	"firstLayout": null
 }

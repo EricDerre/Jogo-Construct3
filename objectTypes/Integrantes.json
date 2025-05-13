@@ -1,0 +1,52 @@
+{
+	"name": "Integrantes",
+	"plugin-id": "Sprite",
+	"sid": 421468779493260,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1789,
+						"height": 2012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3112116,
+						"collisionPoly": {
+							"points": [
+								0.12073784237003912,
+								0.07455268389662027,
+								0.8619340413638904,
+								0.11978131212723658,
+								0.7926215762996087,
+								0.9259443339960238,
+								0.07490217998882057,
+								0.8851888667992047
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 837408721165701,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
