@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43203,
+	"savedWithRelease": 43800,
 	"name": "Guitar Hero",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -107,6 +107,7 @@
 		],
 		"subfolders": []
 	},
+	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [],
 	"families": {
@@ -119,6 +120,7 @@
 	"layouts": {
 		"items": [
 			"Layout Teste Mecanica",
+			"slowride_normal",
 			"Sweet Child O' Mine"
 		],
 		"subfolders": []
@@ -126,7 +128,8 @@
 	"eventSheets": {
 		"items": [
 			"Folha de eventos Principal",
-			"Sweet Child O' Mine"
+			"Sweet Child O' Mine",
+			"Folha de eventos slowride"
 		],
 		"subfolders": []
 	},
@@ -145,6 +148,14 @@
 					"name": "Guns N' Roses - Sweet Child O' Mine.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 759005902435149,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Slow Ride.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 782357399129786,
 					"file-info": {
 						"purpose": "none"
 					}

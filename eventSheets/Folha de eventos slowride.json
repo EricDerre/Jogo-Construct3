@@ -1,0 +1,60 @@
+{
+	"name": "Folha de eventos slowride",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Folha de eventos Principal"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 542720061565914,
+					"parameters": {
+						"comparison": 0,
+						"time-seconds": "2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 342229054014383
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 948668734233065
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 751497450163140,
+					"parameters": {
+						"variable": "BPM",
+						"value": "114"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 572706302702724,
+					"parameters": {
+						"audio-file": "Slow Ride",
+						"loop": "not-looping",
+						"volume": "10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 236792260655948
+		}
+	],
+	"sid": 224002513459660
+}

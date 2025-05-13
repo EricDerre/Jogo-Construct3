@@ -90,6 +90,7 @@
 		},
 		{
 			"eventType": "script",
+			"language": "javascript",
 			"script": []
 		}
 	],
