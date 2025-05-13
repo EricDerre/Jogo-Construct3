@@ -260,6 +260,14 @@
 									}
 								},
 								{
+									"id": "set-opacity",
+									"objectClass": "NotaFinalizaMusicaInvisivel",
+									"sid": 725688989623330,
+									"parameters": {
+										"opacity": "0"
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "NotaVerde",
 									"sid": 127695663860783,
