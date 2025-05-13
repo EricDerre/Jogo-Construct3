@@ -3,9 +3,19 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "TempoComecarMusica",
+			"type": "number",
+			"initialValue": "6.3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 745577558970801
+		},
+		{
+			"eventType": "variable",
 			"name": "TocouMusica",
 			"type": "boolean",
-			"initialValue": "true",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -40,12 +50,21 @@
 					"sid": 430863738987202
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 604615315667813,
+					"parameters": {
+						"variable": "TempoComecarMusica",
+						"value": "6.3"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 404172284214818,
+					"sid": 746740780435138,
 					"parameters": {
-						"variable": "PoderAtivo",
-						"value": "true"
+						"variable": "TocouMusica",
+						"value": "false"
 					}
 				}
 			],
@@ -55,17 +74,77 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 782194707943740,
+					"sid": 450152154151582,
 					"parameters": {
-						"interval-seconds": "6.3"
+						"variable": "Aceitacao",
+						"comparison": 5,
+						"value": "40"
 					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 102275958170629,
+					"parameters": {
+						"variable": "TempoComecarMusica",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 371636967227866
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 771994919333967
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 933879384299234,
+					"parameters": {
+						"variable": "TempoComecarMusica",
+						"value": "0.0166666666666667"
+					}
+				}
+			],
+			"sid": 807692892435048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 659953389080196,
+					"parameters": {
+						"variable": "TempoComecarMusica",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 794885360618856,
+					"parameters": {
+						"variable": "TocouMusica"
+					},
+					"isInverted": true
 				},
 				{
 					"id": "is-tag-playing",
 					"objectClass": "Áudio",
-					"sid": 931577388818096,
+					"sid": 978925855645196,
 					"parameters": {
 						"tag": "\"SweetChildOMine\""
 					},
@@ -76,13 +155,22 @@
 				{
 					"id": "play",
 					"objectClass": "Áudio",
-					"sid": 579888528958413,
+					"sid": 238266484191787,
 					"parameters": {
 						"audio-file": "Guns N' Roses - Sweet Child O' Mine",
 						"loop": "not-looping",
 						"volume": "1",
 						"stereo-pan": "0",
 						"tag-optional": "\"SweetChildOMine\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 307382607676764,
+					"parameters": {
+						"variable": "TocouMusica",
+						"value": "true"
 					}
 				}
 			],
