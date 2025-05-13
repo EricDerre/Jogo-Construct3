@@ -1752,7 +1752,9 @@
 					"uid": 2,
 					"sid": 755586357726327,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 755586357726327,
@@ -1792,7 +1794,9 @@
 					"uid": 3,
 					"sid": 725631404562134,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 725631404562134,
@@ -1832,7 +1836,9 @@
 					"uid": 4,
 					"sid": 237210688477177,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 237210688477177,
@@ -1872,7 +1878,9 @@
 					"uid": 5,
 					"sid": 466397736422044,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 466397736422044,
@@ -1912,7 +1920,9 @@
 					"uid": 6,
 					"sid": 999610646937670,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 999610646937670,
@@ -2625,8 +2635,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1087,
-						"y": 11921,
+						"x": 1097,
+						"y": 11766,
 						"width": 157.5030108005254,
 						"height": 157.5030108005254,
 						"originX": 0.49261083743842365,
