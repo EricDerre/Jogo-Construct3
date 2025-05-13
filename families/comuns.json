@@ -1,0 +1,15 @@
+{
+	"name": "comuns",
+	"plugin-id": "Sprite",
+	"sid": 789798360427087,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"NotaAzul",
+		"NotaLaranja",
+		"NotaVerde",
+		"NotaVermelha",
+		"NotaAmarela"
+	]
+}
