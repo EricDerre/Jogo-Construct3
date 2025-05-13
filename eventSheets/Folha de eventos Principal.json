@@ -251,6 +251,15 @@
 									}
 								},
 								{
+									"id": "set-angle-of-motion",
+									"objectClass": "NotaFinalizaMusicaInvisivel",
+									"sid": 795557145341704,
+									"behaviorType": "Projétil",
+									"parameters": {
+										"angle": "90"
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "NotaVerde",
 									"sid": 127695663860783,
@@ -3512,6 +3521,138 @@
 								}
 							],
 							"sid": 738064940449134
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Destruidor",
+									"sid": 344108241848269,
+									"parameters": {
+										"object": "NotaFinalizaMusicaInvisivel"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "NotaFinalizaMusicaInvisivel",
+									"sid": 287168058783458
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 533358739071781,
+									"parameters": {
+										"x": "scrollx",
+										"y": "scrolly"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 747520228522366,
+									"parameters": {
+										"layer": "\"CamadaPopUp\""
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 509588085466367
+								},
+								{
+									"id": "set-height",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 217307100636992,
+									"parameters": {
+										"height": "ViewportWidth(\"CamadaPopUp\")"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 561996280897109,
+									"parameters": {
+										"width": "ViewportWidth(\"CamadaPopUp\")"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "PopUpCinzaFadout",
+									"sid": 589184782110076,
+									"parameters": {
+										"opacity": "50"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BackgroundMenu",
+									"sid": 617325697969389,
+									"parameters": {
+										"x": "scrollx",
+										"y": "scrolly"
+									}
+								},
+								{
+									"id": "set-height",
+									"objectClass": "BackgroundMenu",
+									"sid": 964691336160867,
+									"parameters": {
+										"height": "ViewportHeight(\"HUD\")/2"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "BackgroundMenu",
+									"sid": 785709863900320,
+									"parameters": {
+										"width": "ViewportWidth(\"HUD\") - ViewportWidth(\"HUD\") / 5"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "BackgroundMenu",
+									"sid": 229307211070416,
+									"parameters": {
+										"layer": "\"CamadaPopUp\""
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "BackgroundMenu",
+									"sid": 131689797168665
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BarraDeProgresso",
+									"sid": 335239276576605
+								},
+								{
+									"id": "set-position",
+									"objectClass": "botaoBack",
+									"sid": 651827695523016,
+									"parameters": {
+										"x": "scrollx",
+										"y": "scrolly + 50"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "botaoBack",
+									"sid": 205677395384475,
+									"parameters": {
+										"layer": "\"CamadaPopUp\""
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "botaoBack",
+									"sid": 541304729515231
+								}
+							],
+							"sid": 310054860025004
 						}
 					],
 					"sid": 545378400499122
@@ -4059,6 +4200,31 @@
 						}
 					],
 					"sid": 230507824768888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Toque",
+							"sid": 232652023255048,
+							"parameters": {
+								"object": "botaoBack",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 711319929593253,
+							"parameters": {
+								"layout": "Layout Teste Mecanica"
+							}
+						}
+					],
+					"sid": 716697154426814
 				}
 			],
 			"sid": 848117660870922

@@ -1752,7 +1752,9 @@
 					"uid": 2,
 					"sid": 755586357726327,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 755586357726327,
@@ -1792,7 +1794,9 @@
 					"uid": 3,
 					"sid": 725631404562134,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 725631404562134,
@@ -1832,7 +1836,9 @@
 					"uid": 4,
 					"sid": 237210688477177,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 237210688477177,
@@ -1872,7 +1878,9 @@
 					"uid": 5,
 					"sid": 466397736422044,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 466397736422044,
@@ -1912,7 +1920,9 @@
 					"uid": 6,
 					"sid": 999610646937670,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TempoAtivo": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 999610646937670,
@@ -2796,6 +2806,104 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "NotaFinalizaMusicaInvisivel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"sid": 393527541918209,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 393527541918209,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1505,
+						"y": 10074,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackgroundMenu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"sid": 109669064407727,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 109669064407727,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3322,
+						"y": 14265,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 991061334440331,
@@ -2813,6 +2921,179 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "CamadaPopUp",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "PopUpCinzaFadout",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"sid": 402157576957764,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 402157576957764,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3397,
+						"y": 14752,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "botaoBack",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"sid": 294295302542164,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 294295302542164,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3917,
+						"y": 14349,
+						"width": 336,
+						"height": 177,
+						"originX": 0.5029761904761905,
+						"originY": 0.615819209039548,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotaFinalizaMusicaInvisivel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"sid": 929338015544699,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 1500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 929338015544699,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1479,
+						"y": -394,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 797704359951754,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,
