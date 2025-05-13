@@ -1,15 +1,15 @@
 {
-	"name": "Sweet Child O' Mine",
+	"name": "Rock And Roll All Nite",
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "TocouMusicaGuns",
+			"name": "TocouMusicaKiss",
 			"type": "boolean",
 			"initialValue": "true",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 815222971178885
+			"sid": 489102360251254
 		},
 		{
 			"eventType": "include",
@@ -21,26 +21,26 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 167695725684138
+					"sid": 115020970680023
 				}
 			],
 			"actions": [
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 305015234426660,
+					"sid": 225541343433156,
 					"parameters": {
 						"variable": "BPM",
-						"value": "158"
+						"value": "145"
 					}
 				},
 				{
 					"id": "stop-all",
 					"objectClass": "Áudio",
-					"sid": 430863738987202
+					"sid": 522612209443352
 				}
 			],
-			"sid": 558937403533982
+			"sid": 352672625037361
 		},
 		{
 			"eventType": "block",
@@ -48,17 +48,17 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 782194707943740,
+					"sid": 175027696665861,
 					"parameters": {
-						"interval-seconds": "6.3"
+						"interval-seconds": "6.5"
 					}
 				},
 				{
 					"id": "is-tag-playing",
 					"objectClass": "Áudio",
-					"sid": 931577388818096,
+					"sid": 856076122483001,
 					"parameters": {
-						"tag": "\"SweetChildOMine\""
+						"tag": "\"KISS\""
 					},
 					"isInverted": true
 				}
@@ -67,18 +67,18 @@
 				{
 					"id": "play",
 					"objectClass": "Áudio",
-					"sid": 579888528958413,
+					"sid": 209088555522087,
 					"parameters": {
-						"audio-file": "Guns N' Roses - Sweet Child O' Mine",
+						"audio-file": "Rock And Roll All Nite",
 						"loop": "not-looping",
 						"volume": "1",
 						"stereo-pan": "0",
-						"tag-optional": "\"SweetChildOMine\""
+						"tag-optional": "\"KISS\""
 					}
 				}
 			],
-			"sid": 143833503941412
+			"sid": 312869581160630
 		}
 	],
-	"sid": 526810501575042
+	"sid": 529739155043452
 }
