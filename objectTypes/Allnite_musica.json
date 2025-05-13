@@ -1,0 +1,60 @@
+{
+	"name": "Allnite_musica",
+	"plugin-id": "Sprite",
+	"sid": 771918522483481,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 770,
+						"height": 202,
+						"originX": 0.44675324675324674,
+						"originY": 0.42574257425742573,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4532199,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.009900990099009901,
+								0.7402597402597403,
+								0.009900990099009901,
+								0.9987012987012988,
+								0.18316831683168316,
+								0.987012987012987,
+								0.40594059405940597,
+								0.8779220779220779,
+								0.5445544554455446,
+								0.43766233766233764,
+								0.9306930693069307,
+								0.07662337662337662,
+								0.9653465346534653,
+								0.003896103896103896,
+								0.024752475247524754
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 820440907144600,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

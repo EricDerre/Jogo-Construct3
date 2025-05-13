@@ -1,7 +1,7 @@
 {
-	"name": "arteMenu",
+	"name": "Sprite16",
 	"plugin-id": "Sprite",
-	"sid": 654620678693951,
+	"sid": 754196246448983,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 3497,
-						"height": 1960,
+						"width": 1922,
+						"height": 1082,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/jpeg",
-						"imageSpriteId": 916167,
+						"fileType": "image/png",
+						"imageSpriteId": 8498270,
+						"collisionPoly": {
+							"points": [
+								0.0005202913631633715,
+								0.0009242144177449168,
+								0.9994797086368367,
+								0.0009242144177449168,
+								0.9994797086368367,
+								0.9990757855822551,
+								0.0005202913631633715,
+								0.9990757855822551
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 829872721329183,
+				"sid": 593044221409370,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Botão",
 			"author": "Scirra",
@@ -113,7 +120,6 @@
 			"Sprite9",
 			"Sprite3",
 			"Sprite4",
-			"arteMenu",
 			"Texto",
 			"START",
 			"Sprite5",
@@ -122,7 +128,22 @@
 			"Sprite7",
 			"Sprite8",
 			"Toque",
-			"Mouse"
+			"Mouse",
+			"telaInicio",
+			"Sprite10",
+			"Sprite11",
+			"Sprite12",
+			"Sprite13",
+			"Back",
+			"Sprite14",
+			"Allnite_musica",
+			"Sprite16",
+			"Sprite17",
+			"OMine_musica",
+			"Sprite15",
+			"Sprite18",
+			"VoltarInicio",
+			"Áudio"
 		],
 		"subfolders": []
 	},
@@ -134,15 +155,19 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout Teste Mecanica",
-			"Menu"
+			"Menu",
+			"TelaDeCreditos",
+			"TelaMusicas",
+			"YouRock!",
+			"VocêPerdeu!"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Folha de eventos Principal",
-			"eMenu"
+			"eMenu",
+			"Folha de eventos 1"
 		],
 		"subfolders": []
 	},
@@ -156,7 +181,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Ac dc - Back in black  (instrumental).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 383100206676179,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
