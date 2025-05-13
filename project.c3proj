@@ -99,11 +99,11 @@
 			"Combo",
 			"BarraTempoBranca",
 			"BarraTempoCinza",
-			"Sprite",
 			"BarraDeProgresso",
 			"FogoAcerto",
 			"FaiscaAcerto",
-			"Áudio"
+			"Áudio",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -112,7 +112,9 @@
 	"families": {
 		"items": [
 			"Especiais",
-			"Botoes"
+			"Botoes",
+			"comuns",
+			"longas"
 		],
 		"subfolders": []
 	},

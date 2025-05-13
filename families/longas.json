@@ -1,0 +1,15 @@
+{
+	"name": "longas",
+	"plugin-id": "Sprite",
+	"sid": 352851126823428,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"NotaAzulLonga",
+		"NotaLaranjaLonga",
+		"NotaVerdeLonga",
+		"NotaVermelhaLonga",
+		"NotaAmarelaLonga"
+	]
+}

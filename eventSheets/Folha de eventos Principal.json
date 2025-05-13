@@ -401,6 +401,15 @@
 									"parameters": {
 										"frame-number": "1"
 									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "BarraDeProgresso",
+									"sid": 697888607587872,
+									"parameters": {
+										"instance-variable": "Poder",
+										"value": "1"
+									}
 								}
 							],
 							"sid": 502448242931139
@@ -1463,12 +1472,12 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 552399753402594,
+							"id": "add-to-instvar",
+							"objectClass": "BarraDeProgresso",
+							"sid": 523024962884316,
 							"parameters": {
-								"variable": "ContadorPoder",
-								"value": "2"
+								"instance-variable": "Poder",
+								"value": "0.3"
 							}
 						}
 					],
@@ -1486,13 +1495,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 731022828652057,
+							"id": "compare-instance-variable",
+							"objectClass": "BarraDeProgresso",
+							"sid": 663503428034243,
 							"parameters": {
-								"variable": "ContadorPoder",
+								"instance-variable": "Poder",
 								"comparison": 4,
-								"value": "0"
+								"value": "1"
 							}
 						}
 					],
@@ -1505,6 +1514,30 @@
 								"variable": "PoderAtivo",
 								"value": "true"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "comuns",
+							"sid": 478501772744240,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Especiais",
+							"sid": 548688778157255,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "longas",
+							"sid": 807997002371415,
+							"parameters": {
+								"frame-number": "1"
+							}
 						}
 					],
 					"sid": 168003869686812
@@ -1513,13 +1546,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 982635819864355,
+							"id": "compare-instance-variable",
+							"objectClass": "BarraDeProgresso",
+							"sid": 111307782578787,
 							"parameters": {
-								"variable": "ContadorPoder",
-								"comparison": 1,
-								"value": "0"
+								"instance-variable": "Poder",
+								"comparison": 2,
+								"value": "1"
 							}
 						},
 						{
@@ -1564,13 +1597,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 781971497133007,
+							"id": "compare-instance-variable",
+							"objectClass": "BarraDeProgresso",
+							"sid": 635001437437196,
 							"parameters": {
-								"variable": "ContadorPoder",
+								"instance-variable": "Poder",
 								"comparison": 1,
-								"value": "0"
+								"value": "1"
 							}
 						},
 						{
@@ -1583,15 +1616,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 631769736415529,
-							"parameters": {
-								"variable": "ContadorPoder",
-								"value": "1"
-							}
-						},
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "BarraDeProgresso",
@@ -1608,11 +1632,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 422154501677764,
+							"id": "compare-instance-variable",
+							"objectClass": "BarraDeProgresso",
+							"sid": 950138283771876,
 							"parameters": {
-								"variable": "ContadorPoder",
+								"instance-variable": "Poder",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -1622,14 +1646,74 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 360600183119368,
+							"sid": 347927013696463,
 							"parameters": {
 								"variable": "MultiplicadorDePoder",
-								"value": "1"
+								"value": "0"
 							}
 						}
 					],
 					"sid": 741061024054323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BarraDeProgresso",
+							"sid": 920891739108590,
+							"parameters": {
+								"instance-variable": "Poder",
+								"comparison": 3,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BarraDeProgresso",
+							"sid": 352710614369068,
+							"parameters": {
+								"instance-variable": "Poder",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 934786021259463,
+							"parameters": {
+								"variable": "PoderAtivo",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "comuns",
+							"sid": 248580577098842,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Especiais",
+							"sid": 343971284459771,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "longas",
+							"sid": 650293733786925,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 167213673038652
 				}
 			],
 			"sid": 354027443774015
