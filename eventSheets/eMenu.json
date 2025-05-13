@@ -31,7 +31,7 @@
 					"objectClass": "Toque",
 					"sid": 357263349251677,
 					"parameters": {
-						"object": "start_"
+						"object": "BtStart"
 					}
 				}
 			],
@@ -55,14 +55,14 @@
 					"objectClass": "Mouse",
 					"sid": 972353301232627,
 					"parameters": {
-						"object": "start_"
+						"object": "BtStart"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "start_",
+					"objectClass": "BtStart",
 					"sid": 437669408692858,
 					"parameters": {
 						"color": "rgbEx(128,128,128)"
@@ -79,7 +79,7 @@
 					"objectClass": "Mouse",
 					"sid": 477637037809934,
 					"parameters": {
-						"object": "start_"
+						"object": "BtStart"
 					},
 					"isInverted": true
 				}
@@ -87,7 +87,7 @@
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "start_",
+					"objectClass": "BtStart",
 					"sid": 768637251279811,
 					"parameters": {
 						"color": "rgbEx(107,76,40)"
@@ -104,14 +104,14 @@
 					"objectClass": "Mouse",
 					"sid": 781760936166436,
 					"parameters": {
-						"object": "Creditos"
+						"object": "BtCreditos"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "Creditos",
+					"objectClass": "BtCreditos",
 					"sid": 154654590676689,
 					"parameters": {
 						"color": "rgbEx(128,128,128)"
@@ -128,7 +128,7 @@
 					"objectClass": "Mouse",
 					"sid": 246348062809068,
 					"parameters": {
-						"object": "Creditos"
+						"object": "BtCreditos"
 					},
 					"isInverted": true
 				}
@@ -136,7 +136,7 @@
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "Creditos",
+					"objectClass": "BtCreditos",
 					"sid": 893010017117769,
 					"parameters": {
 						"color": "rgbEx(107,76,40)"
@@ -153,7 +153,7 @@
 					"objectClass": "Toque",
 					"sid": 423867772187030,
 					"parameters": {
-						"object": "Creditos"
+						"object": "BtCreditos"
 					}
 				}
 			],
@@ -177,7 +177,7 @@
 					"objectClass": "Toque",
 					"sid": 878593070699320,
 					"parameters": {
-						"object": "Back"
+						"object": "BtBack"
 					}
 				}
 			],
@@ -201,14 +201,14 @@
 					"objectClass": "Mouse",
 					"sid": 268328171365168,
 					"parameters": {
-						"object": "Back"
+						"object": "BtBack"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "Back",
+					"objectClass": "BtBack",
 					"sid": 356586230847724,
 					"parameters": {
 						"color": "rgbEx(128,128,128)"
@@ -225,7 +225,7 @@
 					"objectClass": "Mouse",
 					"sid": 800850917041104,
 					"parameters": {
-						"object": "Back"
+						"object": "BtBack"
 					},
 					"isInverted": true
 				}
@@ -233,7 +233,7 @@
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "Back",
+					"objectClass": "BtBack",
 					"sid": 340337777342714,
 					"parameters": {
 						"color": "rgbEx(107,76,40)"
@@ -250,7 +250,7 @@
 					"objectClass": "Toque",
 					"sid": 861296223642068,
 					"parameters": {
-						"object": "Allnite_musica"
+						"object": "BtAllnite_musica"
 					}
 				}
 			],
@@ -283,7 +283,7 @@
 					"objectClass": "Toque",
 					"sid": 958802232470646,
 					"parameters": {
-						"object": "OMine_musica"
+						"object": "BtOMine_musica"
 					}
 				}
 			],
@@ -316,7 +316,7 @@
 					"objectClass": "Toque",
 					"sid": 504120182375441,
 					"parameters": {
-						"object": "VoltarInicio"
+						"object": "BtVoltarInicio"
 					}
 				}
 			],
@@ -340,14 +340,14 @@
 					"objectClass": "Mouse",
 					"sid": 707165740369466,
 					"parameters": {
-						"object": "VoltarInicio"
+						"object": "BtVoltarInicio"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "VoltarInicio",
+					"objectClass": "BtVoltarInicio",
 					"sid": 609713587761951,
 					"parameters": {
 						"color": "rgbEx(128,128,128)"
@@ -364,7 +364,7 @@
 					"objectClass": "Mouse",
 					"sid": 491124541544674,
 					"parameters": {
-						"object": "VoltarInicio"
+						"object": "BtVoltarInicio"
 					},
 					"isInverted": true
 				}
@@ -372,7 +372,7 @@
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "VoltarInicio",
+					"objectClass": "BtVoltarInicio",
 					"sid": 989263135444675,
 					"parameters": {
 						"color": "rgbEx(107,76,40)"

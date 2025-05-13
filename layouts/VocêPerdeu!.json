@@ -47,7 +47,7 @@
 					}
 				},
 				{
-					"type": "VoltarInicio",
+					"type": "BtVoltarInicio",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

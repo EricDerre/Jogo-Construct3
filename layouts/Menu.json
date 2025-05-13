@@ -82,7 +82,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "start_",
+					"type": "BtStart",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -122,7 +122,7 @@
 					}
 				},
 				{
-					"type": "Creditos",
+					"type": "BtCreditos",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

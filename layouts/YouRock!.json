@@ -32,7 +32,7 @@
 					"world": {
 						"x": 976.5,
 						"y": 558,
-						"width": 1972,
+						"width": 1971.9999999999998,
 						"height": 1138,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -47,7 +47,7 @@
 					}
 				},
 				{
-					"type": "VoltarInicio",
+					"type": "BtVoltarInicio",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
