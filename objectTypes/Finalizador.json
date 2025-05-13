@@ -1,38 +1,49 @@
 {
-	"name": "Sprite2",
+	"name": "Finalizador",
 	"plugin-id": "Sprite",
-	"sid": 685509695542670,
+	"sid": 250459713148123,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 147978095667243
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 911083157130627
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1200,
-						"height": 1080,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8794286,
+						"imageSpriteId": 3064762,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 697679893933298,
-				"name": "Animação 1",
+				"sid": 139409383938355,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 0
+				"speed": 5
 			}
 		],
 		"subfolders": []
