@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43203,
+	"savedWithRelease": 43900,
 	"name": "Guitar Hero",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -146,6 +146,7 @@
 		],
 		"subfolders": []
 	},
+	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [],
 	"families": {
